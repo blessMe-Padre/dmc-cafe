@@ -15,20 +15,22 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
       'white': '#ffffff',
-      'purple': '#3f3cbb',
-      'orange': '#ec6633',
-      // ---------------------------------
-      'main-black': 'rgba(0, 0, 0, 0.90)',
-      'default-black': '#000000',
-      'blue': '#5278DA',
-      'blue-light': '#203D8A',
+      'green': '#6EC2A7',
+      'dark-green': '#369C7C',
+      'pink': '#FAA6AE',
+      'dark-pink':' #F74A69',
+      'main-black': '#303030',
+      'bg': '#fff4f5',
     },
 
     container: {
       padding: '20px',
       center: true
     },
-    extend: {}
+    fontFamily: {
+      'Montserrat': ['Montserrat-regular', 'regular'],
+      'Jost': ['Jost-bold', 'bold'],
+    }
   },
   plugins: [],
 }
