@@ -16,19 +16,66 @@
             <div class="container gap-5 items-center justify-between flex md:pt-2">
                 <!-- <img class="h-24" loading="lazy" src="./src/img/logo.jpg" width="228" height="98" alt="лого"> -->
                 <div class="flex items-center justify-center">
-                    <button class="bg-pink p-2">
+                   <button class="btn-close-menu bg-pink rounded-lg shadow-xl">
                         <svg viewBox="0 0 64 48">
                             <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
                             <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
                             <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
-                            asdf
                         </svg>
                     </button>
+                    <div class="mobile-menu bg-orange pt-10 -left-96 scrol">
+                        <ul class="flex flex-col pb-11 text-main-black mt-28">
+                            <li class="px-4 mb-4">
+                                <a class="text-main-black hover:text-green transition-colors nav-link"
+                                    href="#">
+                                    <div class="flex items-center justify-center gap-10">
+                                        <img class="rounded-xl" src="./src/img/bands/bts.png" alt="bts_img"/>
+                                        <p class="text-xl font-semibold">BTS</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="px-4 mb-4">
+                                <a class="text-main-black hover:text-green transition-colors nav-link"
+                                    href="#">
+                                    <div class="flex items-center justify-center gap-10">
+                                        <img class="rounded-xl" src="./src/img/bands/bts.png" alt="bts_img"/>
+                                        <p class="text-xl font-semibold">BTS</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="px-4 mb-4">
+                                <a class="text-main-black hover:text-green transition-colors nav-link"
+                                    href="#">
+                                    <div class="flex items-center justify-center gap-10">
+                                        <img class="rounded-xl" src="./src/img/bands/bts.png" alt="bts_img"/>
+                                        <p class="text-xl font-semibold">BTS</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="px-4 mb-4">
+                                <a class="text-main-black hover:text-green transition-colors nav-link"
+                                    href="#">
+                                    <div class="flex items-center justify-center gap-10">
+                                        <img class="rounded-xl" src="./src/img/bands/bts.png" alt="bts_img"/>
+                                        <p class="text-xl font-semibold">BTS</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                                <a class="text-main-black hover:text-green transition-colors nav-link"
+                                    href="#">
+                                    <div class="flex items-center justify-center gap-10">
+                                        <img class="rounded-xl" src="./src/img/bands/bts.png" alt="bts_img"/>
+                                        <p class="text-xl font-semibold">BTS</p>
+                                    </div>
+                                </a
+                        </ul>
+                    </div>
                     <span class=""><img src="./src/img/logo.svg" /></span>
                     <span class="text-[12px] md:text-[20px] text-main-black">DMS <span class="text-pink">SHOP</span> </br> AND  <span class="text-green">CAFE</span></span>
                 </div>
                 
-                <ul class="gap-2 flex-wrap text-main-black hidden md:flex">
+                <ul class="mobile gap-2 flex-wrap text-main-black hidden md:flex">
                     <li class="mr-4"><a class="text-main-black hover:text-green transition-colors nav-link" href="#"
                             data-goto=".page-section-1">Каталог</a></li>
                     <li class="mr-4"><a class="text-main-black hover:text-green transition-colors nav-link" href="#"
@@ -52,12 +99,9 @@
                         </a>
                 </div>
             </div>
-
-            <div class=""></div>
-
             <!-- мобильное меню -->
-            <div class="flex flex-col items-start justify-between pt-20 overflow-hidden md:hidden">
-                <div class="mobile-menu bg-orange pt-10">
+            <div class="flex-col items-start justify-between overflow-hidden flex">
+                <div class="ab">
                     <ul class="flex flex-col pb-11 text-main-black mt-28">
                         <li class="px-4 mb-4"><a class="text-main-black hover:text-green transition-colors nav-link"
                                 href="#" data-goto=".page-section-1">Группы</a>
@@ -76,7 +120,7 @@
                         <li class="px-4 mb-4"><a class="text-main-black hover:text-green transition-colors nav-link"
                                 href="#" data-goto=".page-section-4">Отзывы</a></li>
                     </ul>
-                    <div class="flex justify-center items-center">
+                    <div class="flex items-start justify-start">
                         <a class="header-call-button block w-full mx-3" href="#">
                             <img src="./src/img/icons/cart.svg" class="bg-green p-2 rounded-lg shadow-white"/>
                         </a>
@@ -88,14 +132,6 @@
                         </a>
                     </div>
                 </div>
-
-                <button class="btn-close-menu md:hidden absolute top-5 right-5 bg-pink rounded-lg shadow-xl">
-                    <svg viewBox="0 0 64 48">
-                        <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
-                        <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
-                        <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
-                    </svg>
-                </button>
             </div>
         </header>
 
@@ -103,9 +139,57 @@
 
         </main>
 
-        <footer class="py-12 bg-orange">
-            <div class="container">
-                footer
+        <footer class="footer py-10 page-section-3 wow fadeInUp" data-wow-delay=".9s"">
+            <div class="container flex">
+                <div class="container flex justify-between flex-wrap">
+                    <div class="mb-10">
+                        <a href="/urgent/"><img loading="lazy" src="./src/img/logo.svg" width="137" height="42" alt="лого"></a>
+                        <div class="text-main-black mt-5 transition hover:text-green mb-10">
+                            ИП Тарасова мария Викторовна <br>
+                            г. Владивосток, ул.Светланская, д.109
+                        </div>
+                    </div>
+                    
+                    <ul>
+                        <li><a class="text-xs ld:text-sm text-main-black mb-5 block transition hover:text-green" href="">Каталог</a></li>
+                        <li><a class="text-xs ld:text-sm text-main-black mb-5 block transition hover:text-green" href="">Мероприятия</a></li>
+                        <li><a class="text-xs ld:text-sm text-main-black mb-5 block transition hover:text-green" href="">Новинки</a></li>
+                        <li><a class="text-xs ld:text-sm text-main-black mb-5 block transition hover:text-green" href="">Предзаказ</a></li>
+                        <li><a class="text-xs ld:text-sm text-main-black mb-5 block transition hover:text-green" href="">Отзывы</a></li>
+                    </ul>
+
+
+                    <ul>
+                        <li><a class="text-xs ld:text-sm text-main-black mb-5 block transition hover:text-green" href="">Отзывы</a></li>
+                        <li><a class="text-xs ld:text-sm text-main-black mb-5 block transition hover:text-green" href="">Доставка</a></li>
+                        <li><a class="text-xs ld:text-sm text-main-black mb-5 block transition hover:text-green" href="">Пользовательское соглашение</a></li>
+                        <li><a class="text-xs ld:text-sm text-main-black mb-5 block transition hover:text-green" href="">Политика конфиденциальности</a></li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <a> 
+                                <button class="btn-close-menu bg-pink rounded-lg shadow-xl">
+                                    <img src="./src/img/socials/Vector.svg" />
+                                </button>
+                            </a>
+                        </li>
+
+                        <li><a class="text-sm text-main-black mb-5 block transition hover:text-green font-semibold"
+                                href="tel:+78005553535">
+                                +7 (999) 999-99-99</a></li>
+                        <li><a class="text-sm text-main-black mb-5 block transition hover:text-green font-semibold"
+                                href="tel:+78005553535">
+                                +7 (999) 999-99-99</a></li>
+                        <li><a class="text-sm text-main-black mb-5 block transition hover:text-green font-semibold"
+                                href="mailto:info@urgent-cleaner.com">dmc_shop@mail.ru</a></li>
+                        <li>
+                            <p class="text-sm text-green mb-5 decoration-green"><a href="#">Посмотреть на карте</a></p>
+                        </li>
+                    </ul>
+                    
+
+                </div>
             </div>
         </footer>
     </div>
