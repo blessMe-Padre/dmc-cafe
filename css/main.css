@@ -21,7 +21,7 @@
 }
 
 .btn-close-menu {
-  --color: #202020;
+  --color: #ffffff;
   width: 36px;
   height: 36px;
   padding: 0;
@@ -1537,7 +1537,7 @@ video {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  color: #f2f2f2;
+  color: #303030;
   background: #fff;
   font-weight: 400;
   overflow-x: hidden;
@@ -1681,8 +1681,32 @@ body {
   max-width: 1440px;
 }
 
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
 .-left-96{
   left: -24rem;
+}
+
+.left-3{
+  left: 0.75rem;
+}
+
+.right-3{
+  right: 0.75rem;
+}
+
+.top-3{
+  top: 0.75rem;
+}
+
+.-z-10{
+  z-index: -10;
 }
 
 .z-10{
@@ -1696,6 +1720,10 @@ body {
 
 .mb-10{
   margin-bottom: 2.5rem;
+}
+
+.mb-14{
+  margin-bottom: 3.5rem;
 }
 
 .mb-4{
@@ -1738,16 +1766,36 @@ body {
   height: 6rem;
 }
 
+.h-6{
+  height: 1.5rem;
+}
+
 .h-screen{
   height: 100vh;
+}
+
+.w-0{
+  width: 0px;
+}
+
+.w-6{
+  width: 1.5rem;
 }
 
 .w-full{
   width: 100%;
 }
 
+.min-w-\[100\%\]{
+  min-width: 100%;
+}
+
 .grid-rows-\[auto_1fr_auto\]{
   grid-template-rows: auto 1fr auto;
+}
+
+.flex-row{
+  flex-direction: row;
 }
 
 .flex-col{
@@ -1802,6 +1850,11 @@ body {
   border-radius: 0.75rem;
 }
 
+.bg-bg{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 244 245 / var(--tw-bg-opacity));
+}
+
 .bg-green{
   --tw-bg-opacity: 1;
   background-color: rgb(110 194 167 / var(--tw-bg-opacity));
@@ -1810,6 +1863,18 @@ body {
 .bg-pink{
   --tw-bg-opacity: 1;
   background-color: rgb(250 166 174 / var(--tw-bg-opacity));
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-center{
+  background-position: center;
+}
+
+.p-10{
+  padding: 2.5rem;
 }
 
 .p-2{
@@ -1826,12 +1891,42 @@ body {
   padding-bottom: 2.5rem;
 }
 
+.pb-10{
+  padding-bottom: 2.5rem;
+}
+
 .pb-11{
   padding-bottom: 2.75rem;
 }
 
+.pb-4{
+  padding-bottom: 1rem;
+}
+
 .pt-10{
   padding-top: 2.5rem;
+}
+
+.pt-4{
+  padding-top: 1rem;
+}
+
+.font-Jost{
+  font-family: Jost-bold, bold;
+}
+
+.font-Montserrat{
+  font-family: Montserrat-regular, regular;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .text-\[12px\]{
@@ -1853,8 +1948,20 @@ body {
   line-height: 1rem;
 }
 
+.font-bold{
+  font-weight: 700;
+}
+
+.font-medium{
+  font-weight: 500;
+}
+
 .font-semibold{
   font-weight: 600;
+}
+
+.uppercase{
+  text-transform: uppercase;
 }
 
 .text-green{
@@ -1872,8 +1979,16 @@ body {
   color: rgb(250 166 174 / var(--tw-text-opacity));
 }
 
+.decoration-dark-green{
+  text-decoration-color: #369C7C;
+}
+
 .decoration-green{
   text-decoration-color: #6EC2A7;
+}
+
+.decoration-8{
+  text-decoration-thickness: 8px;
 }
 
 .shadow-xl{
