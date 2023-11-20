@@ -1,6 +1,7 @@
 export const initNewSlider = () => {
     const itemSlider = function () {
         const item = document.querySelector('.new-item');
+        console.log(innerWidth)
         let swiper;
         if (item) {
             swiper = new Swiper(item, {
@@ -29,7 +30,8 @@ export const initNewSlider = () => {
                     },
                     767: {
                       slidesPerView: 3,
-                      spaceBetween: 15
+                      spaceBetween: 15,
+                      slidesPerGroup: 4
                     }
                   }
             });

@@ -5,10 +5,12 @@ export const initMenu = () => {
     const menuButton = document.querySelector('.btn-close-menu');
     const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
 
+
     menuButton.addEventListener('click', e => {
         menuButton.classList.toggle('active');
         mobileMenu.classList.toggle('is-active');
         document.body.classList.toggle("is-dark")
+
         // body.classList.toggle('lock');
     });
 
