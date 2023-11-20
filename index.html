@@ -14,7 +14,7 @@
     <div class="h-screen grid grid-rows-[auto_1fr_auto] wrapper">
         <header class="z-10 w-full transition-colors">
             <div class="container gap-5 items-center justify-between flex md:pt-2">
-                <!-- <img class="h-24" loading="lazy" src="./src/img/logo.jpg" width="228" height="98" alt="лого"> -->
+
                 <div class="flex items-center justify-center">
                    <button class="btn-close-menu bg-pink rounded-lg shadow-xl">
                         <svg viewBox="0 0 64 48">
@@ -23,54 +23,90 @@
                             <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
                         </svg>
                     </button>
-                    <div class="mobile-menu bg-orange pt-10 -left-96 scrol">
-                        <ul class="flex flex-col pb-11 text-main-black mt-28">
-                            <li class="px-4 mb-4">
-                                <a class="text-main-black hover:text-green transition-colors nav-link"
-                                    href="#">
-                                    <div class="flex items-center justify-center gap-10">
-                                        <img class="rounded-xl" src="./src/img/bands/bts.png" alt="bts_img"/>
-                                        <p class="text-xl font-semibold">BTS</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="px-4 mb-4">
-                                <a class="text-main-black hover:text-green transition-colors nav-link"
-                                    href="#">
-                                    <div class="flex items-center justify-center gap-10">
-                                        <img class="rounded-xl" src="./src/img/bands/bts.png" alt="bts_img"/>
-                                        <p class="text-xl font-semibold">BTS</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="px-4 mb-4">
-                                <a class="text-main-black hover:text-green transition-colors nav-link"
-                                    href="#">
-                                    <div class="flex items-center justify-center gap-10">
-                                        <img class="rounded-xl" src="./src/img/bands/bts.png" alt="bts_img"/>
-                                        <p class="text-xl font-semibold">BTS</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="px-4 mb-4">
-                                <a class="text-main-black hover:text-green transition-colors nav-link"
-                                    href="#">
-                                    <div class="flex items-center justify-center gap-10">
-                                        <img class="rounded-xl" src="./src/img/bands/bts.png" alt="bts_img"/>
-                                        <p class="text-xl font-semibold">BTS</p>
-                                    </div>
-                                </a>
-                            </li>
+                    <div class="mobile-menu bg-orange pt-10 -left-96">
+                        <div class="hidden lg:block">
+                            <ul class="flex flex-col pb-11 text-main-black mt-28 overflow-auto h-screen scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+                                <li class="px-4 mb-4">
+                                    <a class="text-main-black hover:text-green transition-colors nav-link"
+                                        href="#">
+                                        <div class="flex items-center justify-center gap-10">
+                                            <img class="rounded-xl" src="./src/img/bands/bts.png" alt="bts_img"/>
+                                            <p class="text-xl font-semibold">BTS</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="px-4 mb-4">
+                                    <a class="text-main-black hover:text-green transition-colors nav-link"
+                                        href="#">
+                                        <div class="flex items-center justify-center gap-10">
+                                            <img class="rounded-xl" src="./src/img/bands/bts.png" alt="bts_img"/>
+                                            <p class="text-xl font-semibold">BTS</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="px-4 mb-4">
+                                    <a class="text-main-black hover:text-green transition-colors nav-link"
+                                        href="#">
+                                        <div class="flex items-center justify-center gap-10">
+                                            <img class="rounded-xl" src="./src/img/bands/bts.png" alt="bts_img"/>
+                                            <p class="text-xl font-semibold">BTS</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="px-4 mb-4">
+                                    <a class="text-main-black hover:text-green transition-colors nav-link"
+                                        href="#">
+                                        <div class="flex items-center justify-center gap-10">
+                                            <img class="rounded-xl" src="./src/img/bands/bts.png" alt="bts_img"/>
+                                            <p class="text-xl font-semibold">BTS</p>
+                                        </div>
+                                    </a>
+                                </li>
 
-                                <a class="text-main-black hover:text-green transition-colors nav-link"
-                                    href="#">
-                                    <div class="flex items-center justify-center gap-10">
-                                        <img class="rounded-xl" src="./src/img/bands/bts.png" alt="bts_img"/>
-                                        <p class="text-xl font-semibold">BTS</p>
-                                    </div>
-                                </a
-                        </ul>
+                                    <a class="text-main-black hover:text-green transition-colors nav-link"
+                                        href="#">
+                                        <div class="flex items-center justify-center gap-10">
+                                            <img class="rounded-xl" src="./src/img/bands/bts.png" alt="bts_img"/>
+                                            <p class="text-xl font-semibold">BTS</p>
+                                        </div>
+                                    </a
+                            </ul>
+                        </div>
+                        <div class="lg:hidden sm:block overflow-hidden w-full">
+                            <ul class="flex flex-col pb-11 text-main-black mt-28">
+                                <li class="px-4 mb-4"><a class="text-main-black hover:text-green transition-colors nav-link"
+                                        href="#" data-goto="#">Группы</a>
+                                </li>
+                                <li class="px-4 mb-4"><a class="text-main-black hover:text-green transition-colors nav-link"
+                                        href="#" data-goto=".page-section-1">Каталог</a>
+                                </li>
+                                <li class="px-4 mb-4"><a class="text-main-black hover:text-green transition-colors nav-link"
+                                        href="#" data-goto=".page-section-2">Новинки</a></li>
+                                <li class="px-4 mb-4"><a class="text-main-black hover:text-green transition-colors nav-link"
+                                        href="#" data-goto=".page-section-3">Предзаказ</a></li>
+        
+                                <li class="px-4 mb-4"><a class="text-main-black hover:text-green transition-colors nav-link"
+                                        href="#" data-goto=".page-section-4">Мероприятия</a></li>
+        
+                                <li class="px-4 mb-4"><a class="text-main-black hover:text-green transition-colors nav-link"
+                                        href="#" data-goto="#">Отзывы</a></li>
+                            </ul>
+                            <div class="flex gap-2 pt-44">
+                                <a class="flex" href="#">
+                                    <img src="./src/img/icons/cart.svg" class="bg-green p-2 rounded-lg shadow-white"/>
+                                </a>
+                                <a class="flex" href="#">
+                                    <img src="./src/img/icons/account.svg" class="bg-green p-2 rounded-lg" />
+                                </a>
+                                <a class="flex" href="#">
+                                    <img src="./src/img/icons/search.svg" class="bg-green p-2 rounded-lg"/>
+                                </a>
+                            </div>
+                        </div>
+                        
                     </div>
+
+                    
                     <span class=""><img src="./src/img/logo.svg" /></span>
                     <span class="text-[12px] md:text-[20px] text-main-black">DMS <span class="text-pink">SHOP</span> </br> AND  <span class="text-green">CAFE</span></span>
                 </div>
@@ -99,51 +135,18 @@
                         </a>
                 </div>
             </div>
-            <!-- мобильное меню -->
-            <!-- <div class="flex-col items-start justify-between overflow-hidden flex">
-                <div class="ab">
-                    <ul class="flex flex-col pb-11 text-main-black mt-28">
-                        <li class="px-4 mb-4"><a class="text-main-black hover:text-green transition-colors nav-link"
-                                href="#" data-goto=".page-section-1">Группы</a>
-                        </li>
-                        <li class="px-4 mb-4"><a class="text-main-black hover:text-green transition-colors nav-link"
-                                href="#" data-goto=".page-section-2">Каталог</a>
-                        </li>
-                        <li class="px-4 mb-4"><a class="text-main-black hover:text-green transition-colors nav-link"
-                                href="#" data-goto=".page-section-3">Новинки</a></li>
-                        <li class="px-4 mb-4"><a class="text-main-black hover:text-green transition-colors nav-link"
-                                href="#" data-goto=".page-section-4">Предзаказ</a></li>
-
-                        <li class="px-4 mb-4"><a class="text-main-black hover:text-green transition-colors nav-link"
-                                href="#" data-goto=".page-section-4">Мероприятия</a></li>
-
-                        <li class="px-4 mb-4"><a class="text-main-black hover:text-green transition-colors nav-link"
-                                href="#" data-goto=".page-section-4">Отзывы</a></li>
-                    </ul>
-                    <div class="flex items-start justify-start">
-                        <a class="header-call-button block w-full mx-3" href="#">
-                            <img src="./src/img/icons/cart.svg" class="bg-green p-2 rounded-lg shadow-white"/>
-                        </a>
-                        <a class="header-call-button block w-full mx-3" href="#">
-                            <img src="./src/img/icons/account.svg" class="bg-green p-2 rounded-lg" />
-                        </a>
-                        <a class="header-call-button block w-full mx-3" href="#">
-                            <img src="./src/img/icons/search.svg" class="bg-green p-2 rounded-lg"/>
-                        </a>
-                    </div>
-                </div>
-            </div> -->
+    
         </header>
 
         <main>
-            <section class="main-swiper mb-14 wow fadeInUp" data-wow-delay="0.2s"">
+            <section class="main-swiper mt-5 mb-14 wow fadeInUp" data-wow-delay="0.2s"">
                 <div class="container">
                     <div class="item-main__wrapper -z-10">
                         <div class="slider-item w-0 min-w-[100%] overflow-hidden relative">
                             <div class="swiper-wrapper">
-                                <!-- Slides -->
+                                
                                 <div class="swiper-slide">
-                                    <img class="rounded-xl" src="./src/img/main/Banner.png" alt=""/>
+                                    <img class="rounded-xl" src="./src/img/main/image 5.png" alt=""/>
                                 </div>
                                 <div class="swiper-slide">
                                     <img class="rounded-xl" src="./src/img/main/image 5.png" alt=""/>
@@ -152,7 +155,7 @@
                                     <img class="rounded-xl" src="./src/img/main/image 6.png" alt=""/>
                                 </div>
                             </div>
-                            <!-- If we need pagination -->
+                            
                             <div class="swiper-pagination"></div>
                         </div>
                     </div>
@@ -162,81 +165,257 @@
                     </div>
 
                     
-                    <ul class="flex items-center justify-center p-10 gap-5">
+                    <ul class="flex items-center justify-center p-10 gap-5 flex-wrap">
                         <li>
-                            <img class="rounded-lg" src="./src/img/bands_big/image 16.png" /></li>
+                            <img class="rounded-lg md:w-[150px] md:h-[150px] w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
+                        </li>
                         <li>
-                            <img class="rounded-lg" src="./src/img/bands_big/image 15.png" /></li>
+                            <img class="rounded-lg md:w-[150px] md:h-[150px] w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
+                        </li>
                         <li>
-                            <img class="rounded-lg" src="./src/img/bands_big/image 9.png" /></li>
+                            <img class="rounded-lg md:w-[150px] md:h-[150px] w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
+                        </li>
                         <li>
-                            <img class="rounded-lg" src="./src/img/bands_big/image 13.png" /></li>
+                            <img class="rounded-lg md:w-[150px] md:h-[150px] w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
+                        </li>
                         <li>
-                            <img class="rounded-lg" src="./src/img/bands_big/image 14.png" /></li>
+                            <img class="rounded-lg md:w-[150px] md:h-[150px] w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
+                        </li>
                         <li>
-                            <img class="rounded-lg" src="./src/img/bands_big/image 7.png" /></li>
+                            <img class="rounded-lg md:w-[150px] md:h-[150px] w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
+                        </li>
                         <li>
-                            <img class="rounded-lg" src="./src/img/bands_big/image 8.png" /></li>
-                        <li>
-                            <img class="rounded-lg" src="./src/img/bands_big/image 10.png" /></li>
-                        <li>
-                            <img class="rounded-lg" src="./src/img/bands_big/image 11.png" /></li>
+                            <img class="rounded-lg md:w-[150px] md:h-[150px] w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
+                        </li>
+                    
                     </ul>
-                    <span>Посмотреть все</span>
+                   
+                        <a href="#">
+                            <div class="flex items-center justify-end gap-2">
+                                <span>Посмотреть все</span>
+                                <span><img src="./src/img/icons/arrow-bottom.svg" alt="стрелочка вниз"/></span>
+                            </div>
+                        </a>
+                   
+                    
                     
                     
                 </div>
             </section>
 
-            <section class="new bg-bg new-swiper">
-                <div class="container w-full new-swiper__wrapper">
-                    <h2 class="text-6xl font-Jost font-semibold uppercase decoration-dark-green decoration-8 pt-10 pb-10">Новинки</h2>
-                    <div class="flex flex-row gap-5 items-center justify-center new-item">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="rounded-xl bg-cover bg-center relative" style="background-image: url('./src/img/new/new_1.png'); height: 450px; width: 460px;">
-                                    <img class="absolute top-3 right-3 text-gray-500" src="./src/img/icons/favorite.svg" />
-                                    <a class="header-call-button block w-full mx-3" href="#">
-                                        <img src="./src/img/icons/favorite.svg" class="absolute top-3 right-3 h-6 w-6 text-gray-500" />
-                                    </a>
-                                    <img class="absolute left-3 top-3  text-gray-500" src="./src/img/order/sticker.png" />
-                                </div>
-                                <div>
-                                    <p class="font-Montserrat font-medium text-xl pt-4 pb-4">Альбом Stray Kids The 3rd Album 5-STAR</p>
-                                    <p class="font-Montserrat font-bold text-2xl">2000 р</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="rounded-xl bg-cover bg-center relative" style="background-image: url('./src/img/new/new_1.png'); height: 450px; width: 460px;">
-                                    <img class="absolute top-3 right-3 text-gray-500" src="./src/img/icons/favorite.svg" />
-                                    <a class="header-call-button block w-full mx-3" href="#">
-                                        <img src="./src/img/icons/favorite.svg" class="absolute top-3 right-3 h-6 w-6 text-gray-500" />
-                                    </a>
-                                    <img class="absolute left-3 top-3  text-gray-500" src="./src/img/order/sticker.png" />
-                                </div>
-                                <div>
-                                    <p class="font-Montserrat font-medium text-xl pt-4 pb-4">Альбом Stray Kids The 3rd Album 5-STAR</p>
-                                    <p class="font-Montserrat font-bold text-2xl">2000 р</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="rounded-xl bg-cover bg-center relative" style="background-image: url('./src/img/new/new_1.png'); height: 450px; width: 460px;">
-                                    <img class="absolute top-3 right-3 text-gray-500" src="./src/img/icons/favorite.svg" />
-                                    <a class="header-call-button block w-full mx-3" href="#">
-                                        <img src="./src/img/icons/favorite.svg" class="absolute top-3 right-3 h-6 w-6 text-gray-500" />
-                                    </a>
-                                    <img class="absolute left-3 top-3  text-gray-500" src="./src/img/order/sticker.png" />
-                                </div>
-                                <div>
-                                    <p class="font-Montserrat font-medium text-xl pt-4 pb-4">Альбом Stray Kids The 3rd Album 5-STAR</p>
-                                    <p class="font-Montserrat font-bold text-2xl">2000 р</p>
-                                </div>
-                            </div>
+            <section class="catalog page-section-1">
+                <div class="container new-swiper__wrapper overflow-hidden">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h2 class="lg:text-6xl sm:text-3xl font-Jost font-semibold uppercase underline decoration-green decoration-8 pt-10 pb-10">Каталог</h2>
+                            
+                        </div>
+
+                        <div>
+                            <button class="btn-close-menu bg-pink rounded-lg shadow-xl -z-0">
+                               <img class="pl-3" src="./src/img/icons/arrow-left.svg" alt="влево" />
+                            </button>
+                            <button class="btn-close-menu bg-pink rounded-lg shadow-xl -z-0">
+                                <img class="pl-3" src="./src/img/icons/arrow-rigth.svg" alt=вправо" />
+                            </button>
                         </div>
                         
                     </div>
                 </div>
             </section>
+
+            <section class="new bg-bg new-swiper page-section-2">
+                
+                <div class="container new-swiper__wrapper overflow-hidden pb-28">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h2 class="lg:text-6xl sm:text-3xl font-Jost font-semibold uppercase underline decoration-green decoration-8 pt-10 pb-10">Новинки</h2>
+                            
+                        </div>
+
+                        <div>
+                            <button class="btn-close-menu bg-pink rounded-lg shadow-xl -z-0">
+                               <img class="pl-3" src="./src/img/icons/arrow-left.svg" alt="влево" />
+                            </button>
+                            <button class="btn-close-menu bg-pink rounded-lg shadow-xl -z-0">
+                                <img class="pl-3" src="./src/img/icons/arrow-rigth.svg" alt=вправо" />
+                            </button>
+                        </div>
+                        
+                    </div>
+                    <div class="new-item">
+                        <div class="swiper-wrapper flex flex-wrap gap-3 sm:gap-6 md:flex-row md:flex-nowrap lg:flex-row lg:flex-nowrap">
+                            <div class="swiper-slide w-full md:w-1/2 lg:w-[450px] bg-cover bg-center rounded-xl relative">
+                                <img class="rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_1.png" />
+                                <img class="absolute top-3 right-3 text-gray-500" src="./src/img/icons/favorite.svg" />
+                                <img class="absolute right-3 top-3 text-gray-500" src="./src/img/icons/favorite.svg" />
+                                <img class="absolute left-3 top-3 text-gray-500" src="./src/img/order/sticker.png" />
+                                <div class="absolute top-[450px] right-10">
+                                    <p class="font-Montserrat font-medium text-base md:text-xl pt-4 pb-4">Альбом Stray Kids The 3rd Album 5-STAR</p>
+                                    <p class="font-Montserrat font-bold text-base md:text-2xl">2000 р</p>
+                                    <a class="header-call-button block w-full mx-3" href="#">
+                                        <img src="./src/img/icons/cart.svg" class="bg-green p-2 rounded-lg shadow-white"/>
+                                    </a>
+                                    <a class="header-call-button block w-full mx-3" href="#">
+                                        <img src="./src/img/icons/cart.svg" class="bg-green p-2 rounded-lg shadow-white"/>
+                                    </a>
+                                </div>
+                            </div>  
+                            <div class="swiper-slide w-full md:w-1/2 lg:w-[450px] bg-cover bg-center rounded-xl relative">
+                                <img class="rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_1.png" />
+                                <img class="absolute top-3 right-3 text-gray-500" src="./src/img/icons/favorite.svg" />
+                                <img class="absolute right-3 top-3 text-gray-500" src="./src/img/icons/favorite.svg" />
+                                <img class="absolute left-3 top-3 text-gray-500" src="./src/img/order/sticker.png" />
+                                <div class="absolute top-[450px] right-10">
+                                    <p class="font-Montserrat font-medium text-base md:text-xl pt-4 pb-4">Альбом Stray Kids The 3rd Album 5-STAR</p>
+                                    <p class="font-Montserrat font-bold text-base md:text-2xl">2000 р</p>
+                                    <a class="header-call-button block w-full mx-3" href="#">
+                                        <img src="./src/img/icons/cart.svg" class="bg-green p-2 rounded-lg shadow-white"/>
+                                    </a>
+                                    <a class="header-call-button block w-full mx-3" href="#">
+                                        <img src="./src/img/icons/cart.svg" class="bg-green p-2 rounded-lg shadow-white"/>
+                                    </a>
+                                </div>
+                            </div>  
+                            
+                        </div>
+                    </div>
+            </section>
+
+            <section class="page-section-3 nav-link">
+            </section>
+
+            <section class="clothes page-section-4 pt-28">
+                <div class="container flex justify-between items-center gap-10 flex-wrap lg:flex-row">
+        
+                    <div class="flex relative">
+                        <img class="sm:h-[361px] sm:w-[361px] md:h-[650px] md:w-[650px]" src="./src/img/clothes/Banner_2.png" alt="" />
+                        <button class="absolute bg-pink rounded-lg shadow-md -z-0 pt-2 pb-2 px-16 lg:px-40 shadow-main-black bottom-9 right-6">
+                            <span class="text-white font-Montserrat text-lg"> В каталог </span>
+                        </button>
+                    </div>
+                    <div class="flex relative">
+                        <img class="sm:h-[361px] sm:w-[361px] md:h-[650px] md:w-[650px]" src="./src/img/clothes/Banner_2.png" alt="" />
+                        <button class="absolute bg-pink rounded-lg shadow-md -z-0 pt-2 pb-2 px-16 lg:px-40 shadow-main-black bottom-9 right-6">
+                            <span class="text-white font-Montserrat text-lg"> В каталог </span>
+                        </button>
+                    </div>
+                    
+                </div>
+            </section>
+            
+            <section class="event page-section-4">
+                <div class="container">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h2 class="lg:text-6xl sm:text-3xl font-Jost font-semibold uppercase underline decoration-green decoration-8 pt-10 pb-10">Мероприятия</h2>
+                        </div>
+
+                        <div>
+                            <button class="btn-close-menu bg-pink rounded-lg shadow-xl">
+                               <img class="pl-3" src="./src/img/icons/arrow-left.svg" alt="влево" />
+                            </button>
+                            <button class="btn-close-menu bg-pink rounded-lg shadow-xl">
+                                <img class="pl-3" src="./src/img/icons/arrow-rigth.svg" alt=вправо" />
+                            </button>
+                        </div>
+                        
+                    </div>
+                    <div class="event-swiper flex overflow-hidden">
+                        <div class="swiper-wrapper flex items-center justify-center gap-2 flex-wrap">
+                            <div class="lg:flex">
+                                <div class="lg:w-1/2 p-4 event-item">
+                                  <img class="rounded-lg" src="./src/img/event/image 26.png"/>
+                                  <p class="pt-2 text-base lg:text-2xl font-bold font-Montserrat">DMC K-POP CAFE празднует День <br> Рождение Чимина</p>
+                                  <div class="flex items-center justify-between">
+                                    <p class="text-sm lg:text-xl">Ждем в гости 14.10.2023</p>
+                                    <a>
+                                      <button class="btn-close-menu bg-green rounded-lg shadow-xl">
+                                        <img class="pl-3" src="./src/img/icons/arrow-corner.svg" alt="вправо" />
+                                      </button>
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="lg:w-1/2 p-4 event-item">
+                                  <img class="rounded-lg" src="./src/img/event/image 26.png"/>
+                                  <p class="pt-2 text-base lg:text-2xl font-bold font-Montserrat">DMC K-POP CAFE празднует День <br> Рождение Чимина</p>
+                                  <div class="flex items-center justify-between">
+                                    <p class="text-sm lg:text-xl">Ждем в гости 14.10.2023</p>
+                                    <a>
+                                      <button class="btn-close-menu bg-green rounded-lg shadow-xl">
+                                        <img class="pl-3" src="./src/img/icons/arrow-corner.svg" alt="вправо" />
+                                      </button>
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="lg:w-1/2 p-4 event-item">
+                                  <img class="rounded-lg" src="./src/img/event/image 26.png"/>
+                                  <p class="pt-2 text-base lg:text-2xl font-bold font-Montserrat">DMC K-POP CAFE празднует День <br> Рождение Чимина</p>
+                                  <div class="flex items-center justify-between">
+                                    <p class="text-sm lg:text-xl">Ждем в гости 14.10.2023</p>
+                                    <a>
+                                      <button class="btn-close-menu bg-green rounded-lg shadow-xl">
+                                        <img class="pl-3" src="./src/img/icons/arrow-corner.svg" alt="вправо" />
+                                      </button>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pt-28">
+                <div class="container relative z-10">
+                    <img class="rounded-lg bg-cover bg-no-repeat" src="./src/img/bottom.png" alt="" />
+                    <img src="./src/img/finger.png" alt="" />
+                    <div class="rounded-xl bg-main-black md:w-[818px] md:h-[653px] sm:h-[570px] sm:w-[335px] absolute top-16 right-1 md:right-5 p-2 md:top-16 sm:top-auto sm:bottom-0 sm:left-0 sm:right-0">
+                      <h2 class="text-3xl font-Jost font-extrabold md:text-6xl text-white p-2">
+                        DMC <span class="text-pink">SHOP</span> AND <span class="text-green">CAFE</span>
+                      </h2>
+                      <div>
+                        <p class="text-white p-3 text-sm md:text-xl">
+                            Это инновационный онлайн-магазин и кафе, где царит неповторимая атмосфера корейской поп-культуры. Мы предлагаем обширный ассортимент товаров, аксессуаров и атрибутики, которые придутся по вкусу как поклонникам k-pop, так и тем, кто просто интересуется этой культурой.
+                        </p>
+                        <p class="text-white p-3 text-sm md:text-xl">
+                            Наша цель - сделать k-pop доступным и привлекательным для всех возрастов и интересов. 
+                        </p>
+                        <p class="text-white p-3 text-sm md:text-xl">
+                            Атмосферное место, вкусная еда и эксклюзивные коктейли Сначала захвати кофе, а потом уже мир ! ©DMC
+                        </p>
+                        <p class="text-white p-3 text-sm md:text-xl">
+                            ПЕРВОЕ K-pop&Anime кафе на Дальнем Востоке:
+                        </p>
+                        <p>
+                            <ul class="text-white list-disc p-7 text-sm md:text-">
+                                <li>
+                                    Просмотр дорам и аниме
+                                </li>
+                                <li>
+                                    Вечеринки и ивенты
+                                </li>
+                            </ul>
+                        </p>
+                        <p>
+                            <a href="#" class="text-green">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                        <path d="M17 29.75C21.9583 24.65 26.9166 20.0832 26.9166 14.45C26.9166 8.8167 22.4768 4.25 17 4.25C11.5232 4.25 7.08331 8.8167 7.08331 14.45C7.08331 20.0832 12.0416 24.65 17 29.75Z" stroke="#6EC2A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M17 16.9999C18.5648 16.9999 19.8333 15.7314 19.8333 14.1666C19.8333 12.6018 18.5648 11.3333 17 11.3333C15.4351 11.3333 14.1666 12.6018 14.1666 14.1666C14.1666 15.7314 15.4351 16.9999 17 16.9999Z" stroke="#6EC2A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    <span>Владивосток, Светланская улица, 109</span>
+                                </div>
+                                
+                            </a>
+                        </p>
+                    </div>
+                    </div>
+                  </div>
+            </section>  
+            
+           
         </main>
 
         <footer class="footer py-10 page-section-3 wow fadeInUp" data-wow-delay=".9s"">
