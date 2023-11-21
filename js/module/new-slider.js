@@ -5,14 +5,13 @@ export const initNewSlider = () => {
         let swiper;
         if (item) {
             swiper = new Swiper(item, {
-                loop: true,
+                // loop: true,
                 autoplay: {
                     delay: 3000
                 },
                 direction: 'horizontal',
                 spaceBetween: 15,
                 slidesPerView: 4,
-                equalHeight: true,
 
                 // If we need pagination
                 pagination: {

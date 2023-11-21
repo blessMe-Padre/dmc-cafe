@@ -12,7 +12,7 @@
 
 <body>
     <div class="h-screen grid grid-rows-[auto_1fr_auto] wrapper">
-        <header class="z-10 w-full transition-colors">
+        <header class="z-10 w-full transition-colors fixed">
             <div class="container gap-5 items-center justify-between flex md:pt-2">
 
                 <div class="flex items-center justify-center">
@@ -139,7 +139,7 @@
         </header>
 
         <main>
-            <section class="main-swiper mt-5 mb-14 wow fadeInUp" data-wow-delay="0.2s"">
+            <section class="main-swiper mt-24 mb-14 wow fadeInUp" data-wow-delay="0.2s"">
                 <div class="container">
                     <div class="item-main__wrapper -z-10">
                         <div class="slider-item w-0 min-w-[100%] overflow-hidden relative">
@@ -165,37 +165,44 @@
                     </div>
 
                     
-                    <ul class="flex items-center justify-center p-10 gap-5 flex-wrap">
-                        <li>
+                    <ul class="flex items-center justify-center p-10 gap-5 flex-wrap band__list">
+                        <li class="band__item block">
                             <img class="rounded-lg md:w-[150px] md:h-[150px] w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
                         </li>
-                        <li>
+                        <li class="band__item block">
                             <img class="rounded-lg md:w-[150px] md:h-[150px] w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
                         </li>
-                        <li>
+                        <li class="band__item block">
                             <img class="rounded-lg md:w-[150px] md:h-[150px] w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
                         </li>
-                        <li>
+                        <li class="band__item block">
                             <img class="rounded-lg md:w-[150px] md:h-[150px] w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
                         </li>
-                        <li>
+                        <li class="band__item">
                             <img class="rounded-lg md:w-[150px] md:h-[150px] w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
                         </li>
-                        <li>
+                        <li class="band__item">
                             <img class="rounded-lg md:w-[150px] md:h-[150px] w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
                         </li>
-                        <li>
+                        <li class="band__item">
                             <img class="rounded-lg md:w-[150px] md:h-[150px] w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
                         </li>
-                    
+                        <li class="band__item">
+                            <img class="rounded-lg md:w-[150px] md:h-[150px] w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
+                        </li>
                     </ul>
                    
-                        <a href="#">
-                            <div class="flex items-center justify-end gap-2">
-                                <span>Посмотреть все</span>
+                        
+                        <div class="flex items-center justify-end gap-2">
+                            <span>Посмотреть все</span>
+                            <button class="load-more-js">
                                 <span><img src="./src/img/icons/arrow-bottom.svg" alt="стрелочка вниз"/></span>
-                            </div>
-                        </a>
+                            </button>
+                            <!-- <button class="hide-more-js">
+                                <span><img class="rotate-180" src="./src/img/icons/arrow-bottom.svg" alt="стрелочка вниз"/></span>
+                            </button> -->
+                        </div>
+                        
                    
                     
                     
@@ -277,6 +284,38 @@
                                     </a>
                                 </div>
                             </div>  
+                            <div class="swiper-slide w-full md:w-1/2 lg:w-[450px] bg-cover bg-center rounded-xl relative">
+                                <img class="rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_1.png" />
+                                <img class="absolute top-3 right-3 text-gray-500" src="./src/img/icons/favorite.svg" />
+                                <img class="absolute right-3 top-3 text-gray-500" src="./src/img/icons/favorite.svg" />
+                                <img class="absolute left-3 top-3 text-gray-500" src="./src/img/order/sticker.png" />
+                                <div class="absolute top-[450px] right-10">
+                                    <p class="font-Montserrat font-medium text-base md:text-xl pt-4 pb-4">Альбом Stray Kids The 3rd Album 5-STAR</p>
+                                    <p class="font-Montserrat font-bold text-base md:text-2xl">2000 р</p>
+                                    <a class="header-call-button block w-full mx-3" href="#">
+                                        <img src="./src/img/icons/cart.svg" class="bg-green p-2 rounded-lg shadow-white"/>
+                                    </a>
+                                    <a class="header-call-button block w-full mx-3" href="#">
+                                        <img src="./src/img/icons/cart.svg" class="bg-green p-2 rounded-lg shadow-white"/>
+                                    </a>
+                                </div>
+                            </div>  
+                            <div class="swiper-slide w-full md:w-1/2 lg:w-[450px] bg-cover bg-center rounded-xl relative">
+                                <img class="rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_1.png" />
+                                <img class="absolute top-3 right-3 text-gray-500" src="./src/img/icons/favorite.svg" />
+                                <img class="absolute right-3 top-3 text-gray-500" src="./src/img/icons/favorite.svg" />
+                                <img class="absolute left-3 top-3 text-gray-500" src="./src/img/order/sticker.png" />
+                                <div class="absolute top-[450px] right-10">
+                                    <p class="font-Montserrat font-medium text-base md:text-xl pt-4 pb-4">Альбом Stray Kids The 3rd Album 5-STAR</p>
+                                    <p class="font-Montserrat font-bold text-base md:text-2xl">2000 р</p>
+                                    <a class="header-call-button block w-full mx-3" href="#">
+                                        <img src="./src/img/icons/cart.svg" class="bg-green p-2 rounded-lg shadow-white"/>
+                                    </a>
+                                    <a class="header-call-button block w-full mx-3" href="#">
+                                        <img src="./src/img/icons/cart.svg" class="bg-green p-2 rounded-lg shadow-white"/>
+                                    </a>
+                                </div>
+                            </div>  
                             
                         </div>
                     </div>
@@ -304,7 +343,7 @@
                 </div>
             </section>
             
-            <section class="event page-section-4">
+            <!-- <section class="event page-section-4">
                 <div class="container">
                     <div class="flex items-center justify-between">
                         <div>
@@ -322,60 +361,87 @@
                         
                     </div>
                     <div class="event-swiper flex overflow-hidden">
-                        <div class="swiper-wrapper flex items-center justify-center gap-2 flex-wrap">
-                            <div class="lg:flex">
-                                <div class="lg:w-1/2 p-4 event-item">
-                                  <img class="rounded-lg" src="./src/img/event/image 26.png"/>
-                                  <p class="pt-2 text-base lg:text-2xl font-bold font-Montserrat">DMC K-POP CAFE празднует День <br> Рождение Чимина</p>
-                                  <div class="flex items-center justify-between">
+                        <div class="swiper-wrapper flex gap-2 flex-wrap lg:flex-no-wrap">
+                            <div class=" lg:w-1/2 p-4">
+                                <img class="rounded-lg" src="./src/img/event/image 26.png" />
+                                <p class="pt-2 text-base lg:text-2xl font-bold font-Montserrat">DMC K-POP CAFE празднует День <br> Рождение Чимина</p>
+                                <div class="flex items-center justify-between">
                                     <p class="text-sm lg:text-xl">Ждем в гости 14.10.2023</p>
                                     <a>
-                                      <button class="btn-close-menu bg-green rounded-lg shadow-xl">
-                                        <img class="pl-3" src="./src/img/icons/arrow-corner.svg" alt="вправо" />
-                                      </button>
+                                        <button class="btn-close-menu bg-green rounded-lg shadow-xl">
+                                            <img class="pl-3" src="./src/img/icons/arrow-corner.svg" alt="вправо" />
+                                        </button>
                                     </a>
-                                  </div>
                                 </div>
-                                <div class="lg:w-1/2 p-4 event-item">
-                                  <img class="rounded-lg" src="./src/img/event/image 26.png"/>
-                                  <p class="pt-2 text-base lg:text-2xl font-bold font-Montserrat">DMC K-POP CAFE празднует День <br> Рождение Чимина</p>
-                                  <div class="flex items-center justify-between">
-                                    <p class="text-sm lg:text-xl">Ждем в гости 14.10.2023</p>
-                                    <a>
-                                      <button class="btn-close-menu bg-green rounded-lg shadow-xl">
-                                        <img class="pl-3" src="./src/img/icons/arrow-corner.svg" alt="вправо" />
-                                      </button>
-                                    </a>
-                                  </div>
-                                </div>
-                                <div class="lg:w-1/2 p-4 event-item">
-                                  <img class="rounded-lg" src="./src/img/event/image 26.png"/>
-                                  <p class="pt-2 text-base lg:text-2xl font-bold font-Montserrat">DMC K-POP CAFE празднует День <br> Рождение Чимина</p>
-                                  <div class="flex items-center justify-between">
-                                    <p class="text-sm lg:text-xl">Ждем в гости 14.10.2023</p>
-                                    <a>
-                                      <button class="btn-close-menu bg-green rounded-lg shadow-xl">
-                                        <img class="pl-3" src="./src/img/icons/arrow-corner.svg" alt="вправо" />
-                                      </button>
-                                    </a>
-                                  </div>
-                                </div>
-                              </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <section class="event py-40 sm:-mt-0 lg:-mt-32 mb-20 w-0 min-w-[100%] page-section-3 wow fadeInUp" data-wow-delay="0.4s"">
+                <div class="container relative">
+                    <div>
+                        <h2 class="lg:text-6xl sm:text-3xl font-Jost font-semibold uppercase underline decoration-green decoration-8 pt-10 pb-10">Новинки</h2>
                         
+                    </div>
+                    <div class="services-swiper overflow-hidden">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-item1 relative p-5">
+                                
+                                <img class="rounded-lg" src="./src/img/event/image 26.png" />
+                                <p class="pt-2 text-base lg:text-2xl font-bold font-Montserrat">DMC K-POP CAFE празднует День <br> Рождение Чимина</p>
+                                <div class="flex items-center justify-between">
+                                    <p class="text-sm lg:text-xl">Ждем в гости 14.10.2023</p>
+                                    <a>
+                                        <button class="btn-close-menu bg-green rounded-lg shadow-xl">
+                                            <img class="pl-3" src="./src/img/icons/arrow-corner.svg" alt="вправо" />
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>              
+                            <div class="swiper-item1 relative p-5">
+                                
+                                <img class="rounded-lg" src="./src/img/event/image 26.png" />
+                                <p class="pt-2 text-base lg:text-2xl font-bold font-Montserrat">DMC K-POP CAFE празднует День <br> Рождение Чимина</p>
+                                <div class="flex items-center justify-between">
+                                    <p class="text-sm lg:text-xl">Ждем в гости 14.10.2023</p>
+                                    <a>
+                                        <button class="btn-close-menu bg-green rounded-lg shadow-xl">
+                                            <img class="pl-3" src="./src/img/icons/arrow-corner.svg" alt="вправо" />
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>              
+                            <div class="swiper-item1 relative p-5">
+                                
+                                <img class="rounded-lg" src="./src/img/event/image 26.png" />
+                                <p class="pt-2 text-base lg:text-2xl font-bold font-Montserrat">DMC K-POP CAFE празднует День <br> Рождение Чимина</p>
+                                <div class="flex items-center justify-between">
+                                    <p class="text-sm lg:text-xl">Ждем в гости 14.10.2023</p>
+                                    <a>
+                                        <button class="btn-close-menu bg-green rounded-lg shadow-xl">
+                                            <img class="pl-3" src="./src/img/icons/arrow-corner.svg" alt="вправо" />
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>              
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="pt-28">
-                <div class="container relative z-10">
-                    <img class="rounded-lg bg-cover bg-no-repeat" src="./src/img/bottom.png" alt="" />
-                    <img src="./src/img/finger.png" alt="" />
-                    <div class="rounded-xl bg-main-black md:w-[818px] md:h-[653px] sm:h-[570px] sm:w-[335px] absolute top-16 right-1 md:right-5 p-2 md:top-16 sm:top-auto sm:bottom-0 sm:left-0 sm:right-0">
+                <div class="container relative">
+                    <img class="rounded" src="./src/img/bottom.png" alt="" />
+                    <div class="bg-main-black rounded w-full sm:w-[335px] md:ml-[36.4rem] lg:-mt-[44rem] md:w-[818px] md:h-[653px] p-6 relative z-10">
+                      <div class="absolute bottom-0 right-0 -z-10">
+                        <img src="./src/img/finger.png" alt="" />
+                      </div>
                       <h2 class="text-3xl font-Jost font-extrabold md:text-6xl text-white p-2">
                         DMC <span class="text-pink">SHOP</span> AND <span class="text-green">CAFE</span>
-                      </h2>
-                      <div>
+                    </h2>
+                    <div>
                         <p class="text-white p-3 text-sm md:text-xl">
                             Это инновационный онлайн-магазин и кафе, где царит неповторимая атмосфера корейской поп-культуры. Мы предлагаем обширный ассортимент товаров, аксессуаров и атрибутики, которые придутся по вкусу как поклонникам k-pop, так и тем, кто просто интересуется этой культурой.
                         </p>
@@ -411,14 +477,11 @@
                             </a>
                         </p>
                     </div>
-                    </div>
                   </div>
-            </section>  
-            
-           
+              </section>
         </main>
 
-        <footer class="footer py-10 page-section-3 wow fadeInUp" data-wow-delay=".9s"">
+        <footer class="footer page-section-3 pt-32">
             <div class="container flex">
                 <div class="container flex justify-between flex-wrap">
                     <div class="mb-10">
@@ -430,19 +493,19 @@
                     </div>
                     
                     <ul>
-                        <li><a class="text-xs ld:text-sm text-main-black mb-5 block transition hover:text-green" href="">Каталог</a></li>
-                        <li><a class="text-xs ld:text-sm text-main-black mb-5 block transition hover:text-green" href="">Мероприятия</a></li>
-                        <li><a class="text-xs ld:text-sm text-main-black mb-5 block transition hover:text-green" href="">Новинки</a></li>
-                        <li><a class="text-xs ld:text-sm text-main-black mb-5 block transition hover:text-green" href="">Предзаказ</a></li>
-                        <li><a class="text-xs ld:text-sm text-main-black mb-5 block transition hover:text-green" href="">Отзывы</a></li>
+                        <li><a class="text-xs lg:text-lg text-main-black mb-5 block transition hover:text-green" href="">Каталог</a></li>
+                        <li><a class="text-xs lg:text-lg text-main-black mb-5 block transition hover:text-green" href="">Мероприятия</a></li>
+                        <li><a class="text-xs lg:text-lg text-main-black mb-5 block transition hover:text-green" href="">Новинки</a></li>
+                        <li><a class="text-xs lg:text-lg text-main-black mb-5 block transition hover:text-green" href="">Предзаказ</a></li>
+                        <li><a class="text-xs lg:text-lg text-main-black mb-5 block transition hover:text-green" href="">Отзывы</a></li>
                     </ul>
 
 
                     <ul>
-                        <li><a class="text-xs ld:text-sm text-main-black mb-5 block transition hover:text-green" href="">Отзывы</a></li>
-                        <li><a class="text-xs ld:text-sm text-main-black mb-5 block transition hover:text-green" href="">Доставка</a></li>
-                        <li><a class="text-xs ld:text-sm text-main-black mb-5 block transition hover:text-green" href="">Пользовательское соглашение</a></li>
-                        <li><a class="text-xs ld:text-sm text-main-black mb-5 block transition hover:text-green" href="">Политика конфиденциальности</a></li>
+                        <li><a class="text-xs lg:text-lg text-main-black mb-5 block transition hover:text-green" href="">Отзывы</a></li>
+                        <li><a class="text-xs lg:text-lg text-main-black mb-5 block transition hover:text-green" href="">Доставка</a></li>
+                        <li><a class="text-xs lg:text-lg text-main-black mb-5 block transition hover:text-green" href="">Пользовательское соглашение</a></li>
+                        <li><a class="text-xs lg:text-lg text-main-black mb-5 block transition hover:text-green" href="">Политика конфиденциальности</a></li>
                     </ul>
 
                     <ul class="">
@@ -471,6 +534,7 @@
         </footer>
     </div>
 
+    <script src="./js/module/loadMore.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/wow.js"></script>
     <script type="module" src="js/main.js"></script>
