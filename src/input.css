@@ -10,6 +10,11 @@
 @import './block/tabs.css';
 @import './block/form.css';
 @import './block/popup.css';
+@import './block/event-slider.css';
+/* @import './block/main-slider.css'; */
+@import './block/new-slider.css';
+@import './block/bandsButton.css';
+
 
 
 /* Импорт TailWind */
@@ -69,4 +74,9 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.header-fix {
+    background: rgba(192, 190, 190, 0.9);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
 }

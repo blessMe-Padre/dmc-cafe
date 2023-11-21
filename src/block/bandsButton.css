@@ -1,0 +1,11 @@
+.band__list {
+
+}
+
+.band__item {
+    display: none;
+}
+
+.is-visible {
+    display: block;
+  }
