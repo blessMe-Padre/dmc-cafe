@@ -1,11 +1,11 @@
-export const initServiceSlider = () => {
+export const initEventSlider = () => {
 
-    const exclusiveSlider1 = document.querySelector('.services-swiper');
+    const exclusiveSlider1 = document.querySelector('.event-swiper');
 
     console.log(window.innerWidth);
 
     if (exclusiveSlider1) {
-        const sliderItems1 = document.querySelectorAll('.swiper-item1');
+        const sliderItems1 = document.querySelectorAll('.event-item1');
         if (window.innerWidth < 1023) {
             sliderItems1.forEach((slide) => {
                 slide.classList.add('swiper-slide');

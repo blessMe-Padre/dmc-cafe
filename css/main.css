@@ -282,7 +282,8 @@ body.is-dark {
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper>.swiper-slide:first-child{
-  margin-inline-start:var(--swiper-centered-offset-before)
+  -webkit-margin-start:var(--swiper-centered-offset-before);
+          margin-inline-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper::before{
@@ -292,7 +293,8 @@ body.is-dark {
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper>.swiper-slide:first-child{
-  margin-block-start:var(--swiper-centered-offset-before)
+  -webkit-margin-before:var(--swiper-centered-offset-before);
+          margin-block-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper::before{
@@ -1100,18 +1102,18 @@ textarea.form__input {
   background-color: red;
 }
 
-.swiper-item1 {
-  background: rgba(38, 38, 38, 0.60);
+.event-item1 {
+  /* background: rgba(38, 38, 38, 0.60); */
   margin-right: 30px;
   margin-top: 30px;
   width: 500px;
 }
 
-.swiper-item1 ul {
+.event-item1 ul {
   padding-left: 20px;
 }
 
-.swiper-item1 ul li {
+.event-item1 ul li {
   position: relative;
   padding-top: 5px;
 }
@@ -1143,7 +1145,7 @@ textarea.form__input {
 
 /* Импорт TailWind */
 
-/* ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -1775,10 +1777,6 @@ body {
   top: 450px;
 }
 
-.top-0{
-  top: 0px;
-}
-
 .-z-0{
   z-index: 0;
 }
@@ -1804,6 +1802,10 @@ body {
   margin-bottom: 3.5rem;
 }
 
+.mb-20{
+  margin-bottom: 5rem;
+}
+
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -1826,14 +1828,6 @@ body {
 
 .mt-5{
   margin-top: 1.25rem;
-}
-
-.mb-20{
-  margin-bottom: 5rem;
-}
-
-.mb-6{
-  margin-bottom: 1.5rem;
 }
 
 .block{
@@ -1864,10 +1858,6 @@ body {
   width: 0px;
 }
 
-.w-1\/2{
-  width: 50%;
-}
-
 .w-\[60px\]{
   width: 60px;
 }
@@ -1878,10 +1868,6 @@ body {
 
 .min-w-\[100\%\]{
   min-width: 100%;
-}
-
-.flex-shrink-0{
-  flex-shrink: 0;
 }
 
 .rotate-180{
@@ -1989,11 +1975,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.object-contain{
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .p-10{
   padding: 2.5rem;
 }
@@ -2010,16 +1991,16 @@ body {
   padding: 1rem;
 }
 
+.p-5{
+  padding: 1.25rem;
+}
+
 .p-6{
   padding: 1.5rem;
 }
 
 .p-7{
   padding: 1.75rem;
-}
-
-.p-5{
-  padding: 1.25rem;
 }
 
 .px-16{
@@ -2030,11 +2011,6 @@ body {
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 .py-40{
@@ -2135,11 +2111,6 @@ body {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .font-bold{
@@ -2304,25 +2275,11 @@ body {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
-
-  .sm\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .sm\:text-base{
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
 }
 
 @media (min-width: 1024px){
   .md\:ml-\[36\.4rem\]{
     margin-left: 36.4rem;
-  }
-
-  .md\:ml-auto{
-    margin-left: auto;
   }
 
   .md\:flex{
@@ -2365,11 +2322,6 @@ body {
     flex-wrap: nowrap;
   }
 
-  .md\:object-cover{
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-
   .md\:pt-2{
     padding-top: 0.5rem;
   }
@@ -2392,33 +2344,19 @@ body {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-
-  .md\:text-7xl{
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-
-  .md\:text-lg{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
 }
 
 @media (min-width: 1280px){
-  .lg\:-mt-\[44rem\]{
-    margin-top: -44rem;
-  }
-
   .lg\:-mt-32{
     margin-top: -8rem;
   }
 
-  .lg\:block{
-    display: block;
+  .lg\:-mt-\[44rem\]{
+    margin-top: -44rem;
   }
 
-  .lg\:flex{
-    display: flex;
+  .lg\:block{
+    display: block;
   }
 
   .lg\:hidden{
