@@ -3,6 +3,9 @@ import { initMainSlider } from "./module/main-slider.js";
 import { initMenu } from "./module/menu.js";
 import { initNewSlider } from "./module/new-slider.js";
 import { initStickyHeader } from "./module/sticky-header.js";
+import { showBands } from './data.js'
+import { initTabs } from "./module/tabs.js";
+import { initCatalogSlider } from "./module/catalog-slider.js";
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -13,6 +16,9 @@ window.addEventListener('DOMContentLoaded', () => {
     initMainSlider();
     initStickyHeader();
     initEventSlider();
+    showBands();
+    initTabs();
+    initCatalogSlider();
     
 
 });
