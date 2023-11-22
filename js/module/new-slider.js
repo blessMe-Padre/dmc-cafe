@@ -6,12 +6,9 @@ export const initNewSlider = () => {
         if (item) {
             swiper = new Swiper(item, {
                 // loop: true,
-                autoplay: {
-                    delay: 3000
-                },
                 direction: 'horizontal',
                 spaceBetween: 15,
-                slidesPerView: 4,
+
 
                 // If we need pagination
                 pagination: {
@@ -21,16 +18,20 @@ export const initNewSlider = () => {
                 breakpoints: {
                     320: {
                       slidesPerView: 2,
-                      spaceBetween: 15
+                      spaceBetween: 15,
+                      grid: {
+                        rows: 2,
+                        cols: 2,
+                      },
                     },
                     480: {
                       slidesPerView: 3,
-                      spaceBetween: 15
+                      spaceBetween: 15,
                     },
+
                     767: {
                       slidesPerView: 3,
                       spaceBetween: 15,
-                      slidesPerGroup: 4
                     }
                   }
             });

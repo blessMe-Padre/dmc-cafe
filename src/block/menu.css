@@ -1,8 +1,9 @@
 .mobile-menu {
     transition: transform 0.8s ease;
+    z-index: 1000;
     position: fixed;
     top: 0;
-    right: 0;
+    right: 10;
     width: 375px;
     height: 100%;
     overflow: auto;
@@ -33,12 +34,8 @@
     color: #2CC304;
 }
 
-body {
-    transition: background-color 0.3s ease;
-}
 
 body.is-dark {
-    background-color: rgba(0, 0, 0, 0.5);
     overflow: hidden;
 }
 

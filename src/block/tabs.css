@@ -19,3 +19,39 @@
         display: none;
     }
 }
+
+._tabs-item {
+
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    color: black;
+    background-color: white;
+    border: 1px solid #6EC2A7;
+    border-radius: 15px;
+    transition: transform 1s ease;
+}
+
+._tabs-item:hover {
+    border: 2px solid black; 
+    border-radius: 15px; 
+
+    transform: translateY(5px);
+}
+
+._tabs-item._active {
+    background-color: #6EC2A7;
+    color: white;
+}
+
+._tabs-block {
+ 
+    padding: 20px;
+    border-radius: 4px;
+    display: none;
+}
+
+._tabs-block._active {
+    
+    display: flex;
+}

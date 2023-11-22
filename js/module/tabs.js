@@ -21,8 +21,12 @@ export const initTabs = () => {
                 });
 
                 targetBtn.classList.add('_active');
+                
+                
                 targetBtn.classList.add('is-active');
                 currentTab.classList.add('_active');
+                
+                
             }
         });
     });
