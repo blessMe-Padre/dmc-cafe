@@ -5,16 +5,17 @@ export const initNewSlider = () => {
         let swiper;
         if (item) {
             swiper = new Swiper(item, {
-                // loop: true,
+                loop: true,
                 direction: 'horizontal',
                 spaceBetween: 15,
 
 
                 // If we need pagination
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
+                navigation: {
+                  nextEl: '.next-new--item',
+                  prevEl: '.prev-new--item', 
                 },
+                slidesPerGroup: 4,
                 breakpoints: {
                     320: {
                       slidesPerView: 2,

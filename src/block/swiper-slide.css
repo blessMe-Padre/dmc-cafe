@@ -1,0 +1,12 @@
+.swiper-wrapper {
+    display: flex;
+  }
+  
+  .swiper-slide {
+    gap: 10;
+  }
+  
+
+  img.test {
+    width: 300px !important;
+  }
