@@ -8,9 +8,9 @@ export const initCatalogSlider1 = () => {
               // loop: true,
               direction: 'horizontal',
               spaceBetween: 15,
-              loop: true,
-              slidesPerGroup: 4,
-              slidesPerView: 2,
+              // loop: true,
+              slidesPerGroup: 2,
+              slidesPerView: 4,
 
               navigation: {
                 nextEl: '.next-catalog--item',
@@ -18,16 +18,16 @@ export const initCatalogSlider1 = () => {
               },
               breakpoints: {
                   320: {
-                    slidesPerView: 2,
+                    slidesPerGroup: 4,
                     spaceBetween: 15,
                   },
                   480: {
-                    slidesPerView: 3,
+                    slidesPerGroup: 4,
                     spaceBetween: 15,
                   },
 
                   767: {
-                    slidesPerView: 3,
+                    // slidesPerView: 'auto',
                     spaceBetween: 15,
                   }
                 }
