@@ -4,8 +4,8 @@ export const initMenu = () => {
     const mobileMenu = document.querySelector('.mobile-menu');
     const menuButton = document.querySelector('.btn-close-menu');
     const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
-    let overlay = document.createElement('div'); // Создаем элемент overlay
-    overlay.classList.add('overlay'); // Добавляем класс overlay
+    let overlay = document.createElement('div');
+    overlay.classList.add('overlay'); 
 
     menuButton.addEventListener('click', e => {
         menuButton.classList.toggle('active');
