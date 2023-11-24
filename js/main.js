@@ -7,6 +7,7 @@ import { initTabs } from "./module/tabs.js";
 import { initCatalogSlider1, initCatalogSlider2, initCatalogSlider3, initCatalogSlider4, initCatalogSlider5, initCatalogSlider6 } from "./module/catalog-slider.js";
 import { initModal } from "./module/modal.js";
 import { initLoadMore } from "./module/loadMore.js";
+import { initGeneralSlider } from "./module/general-slider.js";
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -26,5 +27,6 @@ window.addEventListener('DOMContentLoaded', () => {
     initCatalogSlider6();
     initLoadMore();
     initModal();
+    initGeneralSlider();
 
 });
