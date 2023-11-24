@@ -1206,6 +1206,32 @@ textarea.form__input {
   }
 }
 
+.modal-wrapper {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 10px 4px 6px #369C7C;
+  transition: opacity 0.3s ease;
+  /* visibility: hidden;
+    opacity: 0; */
+}
+
+.modal-content {
+  padding: 12px;
+}
+
+/* Стили для регистрации и входа (добавьте свойства по вашему усмотрению) */
+
+.text-green {
+  color: green;
+}
+
+.text-pink {
+  color: pink;
+}
+
 /* Импорт TailWind */
 
 /* ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com */
@@ -1643,7 +1669,7 @@ video {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
   color: #303030;
   background: #fff;
   font-weight: 400;
@@ -1848,6 +1874,10 @@ body {
   z-index: 10;
 }
 
+.z-40{
+  z-index: 40;
+}
+
 .mx-3{
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -1897,14 +1927,6 @@ body {
   display: block;
 }
 
-.inline-block{
-  display: inline-block;
-}
-
-.inline{
-  display: inline;
-}
-
 .flex{
   display: flex;
 }
@@ -1917,12 +1939,20 @@ body {
   display: none;
 }
 
+.h-\[60px\]{
+  height: 60px;
+}
+
 .h-screen{
   height: 100vh;
 }
 
 .w-0{
   width: 0px;
+}
+
+.w-\[60px\]{
+  width: 60px;
 }
 
 .w-full{
@@ -1933,12 +1963,13 @@ body {
   min-width: 100%;
 }
 
-.min-w-\[0\]{
-  min-width: 0;
-}
-
 .max-w-0{
   max-width: 0rem;
+}
+
+.rotate-180{
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .list-disc{
@@ -2137,16 +2168,8 @@ body {
   padding-top: 11rem;
 }
 
-.pl-10{
-  padding-left: 2.5rem;
-}
-
 .font-Jost{
   font-family: Jost-bold, bold;
-}
-
-.font-Montserrat{
-  font-family: Montserrat-regular, regular;
 }
 
 .text-2xl{
@@ -2259,10 +2282,40 @@ body {
   transition-duration: 150ms;
 }
 
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-colors{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+
+  src: url('../fonts/Montserrat-VariableFont_wght.ttf');
+
+  font-weight: normal;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jost';
+
+  src: url('../fonts/Jost-VariableFont_wght.ttf');
+
+  font-weight: normal;
+
+  font-style: normal;
+
+  font-display: swap;
 }
 
 /* Директивы классов */
@@ -2313,6 +2366,19 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1;
+}
+
+.text-jost {
+  font-family: 'Jost';
+}
+
+.is-visible {
+  display: block;
+}
+
+.hover\:bg-dark-pink:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 74 105 / var(--tw-bg-opacity));
 }
 
 .hover\:text-green:hover{
@@ -2372,8 +2438,16 @@ body {
     display: none;
   }
 
+  .md\:h-\[150px\]{
+    height: 150px;
+  }
+
   .md\:h-\[650px\]{
     height: 650px;
+  }
+
+  .md\:w-\[150px\]{
+    width: 150px;
   }
 
   .md\:w-\[650px\]{

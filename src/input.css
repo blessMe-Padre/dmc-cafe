@@ -15,6 +15,7 @@
 /* @import './block/main-slider.css'; */
 @import './block/new-slider.css';
 @import './block/bandsButton.css';
+@import './block/modal.css';
 
 
 
@@ -24,9 +25,26 @@
 @tailwind utilities;
 
 
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/Jost-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 @layer base {
     body {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat';
         color: #303030;
         background: #fff;
         font-weight: 400;
@@ -91,4 +109,15 @@
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1; 
     
+}
+
+
+.text-jost {
+    font-family: 'Jost';
+}
+
+
+
+.is-visible {
+    display: block;
 }

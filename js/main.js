@@ -3,9 +3,10 @@ import { initMainSlider } from "./module/main-slider.js";
 import { initMenu } from "./module/menu.js";
 import { initNewSlider } from "./module/new-slider.js";
 import { initStickyHeader } from "./module/sticky-header.js";
-import { showBands } from './data.js'
 import { initTabs } from "./module/tabs.js";
 import { initCatalogSlider1, initCatalogSlider2, initCatalogSlider3, initCatalogSlider4, initCatalogSlider5, initCatalogSlider6 } from "./module/catalog-slider.js";
+import { initModal } from "./module/modal.js";
+import { initLoadMore } from "./module/loadMore.js";
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -16,7 +17,6 @@ window.addEventListener('DOMContentLoaded', () => {
     initMainSlider();
     initStickyHeader();
     initEventSlider();
-    showBands();
     initTabs();
     initCatalogSlider1();
     initCatalogSlider2();
@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initCatalogSlider4();
     initCatalogSlider5();
     initCatalogSlider6();
-
-    
+    initLoadMore();
+    initModal();
 
 });
