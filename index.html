@@ -25,13 +25,22 @@
                     </button>
                     <div class="mobile-menu bg-orange pt-10 -left-96">
                         <div class="hidden lg:block">
-                            <ul class="flex flex-col pb-11 text-main-black mt-28 overflow-auto h-screen scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+                            <ul class="flex flex-col pb-11 text-main-black mt-28 overflow-auto h-screen scrollbar-thumb-gray-300 scrollbar-track-gray-100 justify-start items-start">
                                 <li class="px-4 mb-4">
                                     <a class="text-main-black hover:text-green transition-colors nav-link"
                                         href="#">
                                         <div class="flex items-center justify-center gap-10">
-                                            <img class="rounded-xl" src="./src/img/bands/bts.png" alt="bts_img"/>
-                                            <p class="text-xl font-semibold">BTS</p>
+                                            <img class="rounded-xl" src="./src/img/bands/attez.png" alt="bts_img"/>
+                                            <p class="text-xl font-semibold">attez</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="px-4 mb-4">
+                                    <a class="text-main-black hover:text-green transition-colors nav-link"
+                                        href="#">
+                                        <div class="flex items-center justify-center gap-10">
+                                            <img class="rounded-xl" src="./src/img/bands/blackpink.png" alt="bts_img"/>
+                                            <p class="text-xl font-semibold">blackpink</p>
                                         </div>
                                     </a>
                                 </li>
@@ -48,8 +57,8 @@
                                     <a class="text-main-black hover:text-green transition-colors nav-link"
                                         href="#">
                                         <div class="flex items-center justify-center gap-10">
-                                            <img class="rounded-xl" src="./src/img/bands/bts.png" alt="bts_img"/>
-                                            <p class="text-xl font-semibold">BTS</p>
+                                            <img class="rounded-xl" src="./src/img/bands/enhypen.png" alt="bts_img"/>
+                                            <p class="text-xl font-semibold">enhypen</p>
                                         </div>
                                     </a>
                                 </li>
@@ -57,19 +66,38 @@
                                     <a class="text-main-black hover:text-green transition-colors nav-link"
                                         href="#">
                                         <div class="flex items-center justify-center gap-10">
-                                            <img class="rounded-xl" src="./src/img/bands/bts.png" alt="bts_img"/>
-                                            <p class="text-xl font-semibold">BTS</p>
+                                            <img class="rounded-xl" src="./src/img/bands/itzy.png" alt="bts_img"/>
+                                            <p class="text-xl font-semibold">itzy</p>
                                         </div>
                                     </a>
                                 </li>
-
+                                <li class="px-4 mb-4">
                                     <a class="text-main-black hover:text-green transition-colors nav-link"
                                         href="#">
                                         <div class="flex items-center justify-center gap-10">
-                                            <img class="rounded-xl" src="./src/img/bands/bts.png" alt="bts_img"/>
-                                            <p class="text-xl font-semibold">BTS</p>
+                                            <img class="rounded-xl" src="./src/img/bands/nmixx.png" alt="bts_img"/>
+                                            <p class="text-xl font-semibold">nmixx</p>
                                         </div>
-                                    </a
+                                    </a>
+                                </li>
+                                    <li class="px-4 mb-4"">
+                                        <a class="text-main-black hover:text-green transition-colors nav-link"
+                                            href="#">
+                                            <div class="flex items-center justify-center gap-10">
+                                                <img class="rounded-xl" src="./src/img/bands/twice.png" alt="bts_img"/>
+                                                <p class="text-xl font-semibold">twice</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="px-4 mb-4"">
+                                        <a class="text-main-black hover:text-green transition-colors nav-link"
+                                            href="#">
+                                            <div class="flex items-center justify-center gap-10">
+                                                <img class="rounded-xl" src="./src/img/bands/txt.png" alt="bts_img"/>
+                                                <p class="text-xl font-semibold">txt</p>
+                                            </div>
+                                        </a>
+                                    </li>
                             </ul>
                         </div>
                         <div class="lg:hidden sm:block overflow-hidden w-full">
@@ -162,6 +190,9 @@
 
                     <div class="flex items-center justify-center pt-10">
                         <p class="text-2xl font-Jost font-bold text-main-black uppercase">ALBUM Jin (BTS) The Astronaut (Random)</p>
+                        <a href="#" class="rounded-lg shadow-md shadow-main-black p-2">
+                            <img class="" src="./src/img/icons/arrow-corner.svg" alt="вправо" />
+                        </a>
                     </div>
 
         
@@ -171,7 +202,7 @@
                    
                         
                         <div class="flex items-center justify-end gap-2">
-                            <span>Посмотреть все</span>
+                            <span class="loadMoreText">Посмотреть все</span>
                             <button class="loadMoreButton">
                                 <span><img src="./src/img/icons/arrow-bottom.svg" alt="стрелочка вниз"/></span>
                             </button>
@@ -210,12 +241,12 @@
                         <button class="_tabs-item" data-tab="#merch">Мерч</button>
 
                         
-                            
+                        <!-- Первый таб со слайдерами -->
                         <div id="candy" class="_tabs-block"> 
                             <div class="swiper-container overflow-hidden">      
                                 <div class="catalog-item-1">     
-                                    <div class="swiper-wrapper flex">
-                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative w-10">
+                                    <div class="swiper-wrapper max-w-0 flex sm:flex-wrap lg:flex-nowrap">
+                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative">
                                             <img class="test rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_1.png" />
                                             <a href="#" class="absolute top-3 right-3 text-gray-500">
                                                 <img src="./src/img/icons/favorite.svg" />
@@ -240,7 +271,7 @@
                                                 </div>  
                                             </div>
                                         </div>
-                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative w-10">
+                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative">
                                             <img class="test rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_1.png" />
                                             <a href="#" class="absolute top-3 right-3 text-gray-500">
                                                 <img src="./src/img/icons/favorite.svg" />
@@ -265,7 +296,7 @@
                                                 </div>  
                                             </div>
                                         </div>
-                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative w-10">
+                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative">
                                             <img class="test rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_1.png" />
                                             <a href="#" class="absolute top-3 right-3 text-gray-500">
                                                 <img src="./src/img/icons/favorite.svg" />
@@ -290,7 +321,7 @@
                                                 </div>  
                                             </div>
                                         </div>
-                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative w-10">
+                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative">
                                             <img class="test rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_1.png" />
                                             <a href="#" class="absolute top-3 right-3 text-gray-500">
                                                 <img src="./src/img/icons/favorite.svg" />
@@ -315,8 +346,538 @@
                                                 </div>  
                                             </div>
                                         </div>
-                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative w-10">
+
+                                        
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Второй таб со слайдерами -->
+                        <div id="cosmetics" class="_tabs-block"> 
+                            <div class="swiper-container overflow-hidden">      
+                                <div class="catalog-item-2">     
+                                    <div class="swiper-wrapper max-w-0 flex sm:flex-wrap lg:flex-nowrap">
+                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative">
+                                            <img class="test rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_2.png" />
+                                            <a href="#" class="absolute top-3 right-3 text-gray-500">
+                                                <img src="./src/img/icons/favorite.svg" />
+                                            </a>
+
+                                            <a href="#" class="absolute left-3 top-3 text-gray-500">
+                                                <img src="./src/img/order/sticker.png" />
+                                            </a>
+                                            <p class="font-Montserrat font-medium text-base md:text-xl pt-4 pb-4">Альбом Stray Kids The 3rd Album 5-STAR</p>
+                                            <div class="flex flex-col md:flex-row items-center md:items-start">
+                                                <div class="flex justify-center md:justify-start">
+                                                    <p class="font-Montserrat font-bold text-base md:text-2xl mb-3 md:mb-0">2000 р</p>
+                                                    <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 lg:block sm:hidden">
+                                                        <img class="bg-pink rounded-lg shadow-md shadow-main-black" src="./src/img/icons/favorite.svg" />
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/favorite.svg" class="bg-pink rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/cart.svg" class="bg-green rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative">
+                                            <img class="test rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_2.png" />
+                                            <a href="#" class="absolute top-3 right-3 text-gray-500">
+                                                <img src="./src/img/icons/favorite.svg" />
+                                            </a>
+
+                                            <a href="#" class="absolute left-3 top-3 text-gray-500">
+                                                <img src="./src/img/order/sticker.png" />
+                                            </a>
+                                            <p class="font-Montserrat font-medium text-base md:text-xl pt-4 pb-4">Альбом Stray Kids The 3rd Album 5-STAR</p>
+                                            <div class="flex flex-col md:flex-row items-center md:items-start">
+                                                <div class="flex justify-center md:justify-start">
+                                                    <p class="font-Montserrat font-bold text-base md:text-2xl mb-3 md:mb-0">2000 р</p>
+                                                    <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 lg:block sm:hidden">
+                                                        <img class="bg-pink rounded-lg shadow-md shadow-main-black" src="./src/img/icons/favorite.svg" />
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/favorite.svg" class="bg-pink rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/cart.svg" class="bg-green rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative">
                                             <img class="test rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_1.png" />
+                                            <a href="#" class="absolute top-3 right-3 text-gray-500">
+                                                <img src="./src/img/icons/favorite.svg" />
+                                            </a>
+
+                                            <a href="#" class="absolute left-3 top-3 text-gray-500">
+                                                <img src="./src/img/order/sticker.png" />
+                                            </a>
+                                            <p class="font-Montserrat font-medium text-base md:text-xl pt-4 pb-4">Альбом Stray Kids The 3rd Album 5-STAR</p>
+                                            <div class="flex flex-col md:flex-row items-center md:items-start">
+                                                <div class="flex justify-center md:justify-start">
+                                                    <p class="font-Montserrat font-bold text-base md:text-2xl mb-3 md:mb-0">2000 р</p>
+                                                    <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 lg:block sm:hidden">
+                                                        <img class="bg-pink rounded-lg shadow-md shadow-main-black" src="./src/img/icons/favorite.svg" />
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/favorite.svg" class="bg-pink rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/cart.svg" class="bg-green rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative">
+                                            <img class="test rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_1.png" />
+                                            <a href="#" class="absolute top-3 right-3 text-gray-500">
+                                                <img src="./src/img/icons/favorite.svg" />
+                                            </a>
+
+                                            <a href="#" class="absolute left-3 top-3 text-gray-500">
+                                                <img src="./src/img/order/sticker.png" />
+                                            </a>
+                                            <p class="font-Montserrat font-medium text-base md:text-xl pt-4 pb-4">Альбом Stray Kids The 3rd Album 5-STAR</p>
+                                            <div class="flex flex-col md:flex-row items-center md:items-start">
+                                                <div class="flex justify-center md:justify-start">
+                                                    <p class="font-Montserrat font-bold text-base md:text-2xl mb-3 md:mb-0">2000 р</p>
+                                                    <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 lg:block sm:hidden">
+                                                        <img class="bg-pink rounded-lg shadow-md shadow-main-black" src="./src/img/icons/favorite.svg" />
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/favorite.svg" class="bg-pink rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/cart.svg" class="bg-green rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                </div>  
+                                            </div>
+                                        </div>
+
+                                        
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Третий таб со слайдерами -->  
+                        <div id="coloborations" class="_tabs-block"> 
+                            <div class="swiper-container overflow-hidden">      
+                                <div class="catalog-item-3">     
+                                    <div class="swiper-wrapper max-w-0 flex sm:flex-wrap lg:flex-nowrap">
+                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative">
+                                            <img class="test rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_4.png" />
+                                            <a href="#" class="absolute top-3 right-3 text-gray-500">
+                                                <img src="./src/img/icons/favorite.svg" />
+                                            </a>
+
+                                            <a href="#" class="absolute left-3 top-3 text-gray-500">
+                                                <img src="./src/img/order/sticker.png" />
+                                            </a>
+                                            <p class="font-Montserrat font-medium text-base md:text-xl pt-4 pb-4">Альбом Stray Kids The 3rd Album 5-STAR</p>
+                                            <div class="flex flex-col md:flex-row items-center md:items-start">
+                                                <div class="flex justify-center md:justify-start">
+                                                    <p class="font-Montserrat font-bold text-base md:text-2xl mb-3 md:mb-0">2000 р</p>
+                                                    <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 lg:block sm:hidden">
+                                                        <img class="bg-pink rounded-lg shadow-md shadow-main-black" src="./src/img/icons/favorite.svg" />
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/favorite.svg" class="bg-pink rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/cart.svg" class="bg-green rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative">
+                                            <img class="test rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_4.png" />
+                                            <a href="#" class="absolute top-3 right-3 text-gray-500">
+                                                <img src="./src/img/icons/favorite.svg" />
+                                            </a>
+
+                                            <a href="#" class="absolute left-3 top-3 text-gray-500">
+                                                <img src="./src/img/order/sticker.png" />
+                                            </a>
+                                            <p class="font-Montserrat font-medium text-base md:text-xl pt-4 pb-4">Альбом Stray Kids The 3rd Album 5-STAR</p>
+                                            <div class="flex flex-col md:flex-row items-center md:items-start">
+                                                <div class="flex justify-center md:justify-start">
+                                                    <p class="font-Montserrat font-bold text-base md:text-2xl mb-3 md:mb-0">2000 р</p>
+                                                    <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 lg:block sm:hidden">
+                                                        <img class="bg-pink rounded-lg shadow-md shadow-main-black" src="./src/img/icons/favorite.svg" />
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/favorite.svg" class="bg-pink rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/cart.svg" class="bg-green rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative">
+                                            <img class="test rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_4.png" />
+                                            <a href="#" class="absolute top-3 right-3 text-gray-500">
+                                                <img src="./src/img/icons/favorite.svg" />
+                                            </a>
+
+                                            <a href="#" class="absolute left-3 top-3 text-gray-500">
+                                                <img src="./src/img/order/sticker.png" />
+                                            </a>
+                                            <p class="font-Montserrat font-medium text-base md:text-xl pt-4 pb-4">Альбом Stray Kids The 3rd Album 5-STAR</p>
+                                            <div class="flex flex-col md:flex-row items-center md:items-start">
+                                                <div class="flex justify-center md:justify-start">
+                                                    <p class="font-Montserrat font-bold text-base md:text-2xl mb-3 md:mb-0">2000 р</p>
+                                                    <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 lg:block sm:hidden">
+                                                        <img class="bg-pink rounded-lg shadow-md shadow-main-black" src="./src/img/icons/favorite.svg" />
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/favorite.svg" class="bg-pink rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/cart.svg" class="bg-green rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative">
+                                            <img class="test rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_1.png" />
+                                            <a href="#" class="absolute top-3 right-3 text-gray-500">
+                                                <img src="./src/img/icons/favorite.svg" />
+                                            </a>
+
+                                            <a href="#" class="absolute left-3 top-3 text-gray-500">
+                                                <img src="./src/img/order/sticker.png" />
+                                            </a>
+                                            <p class="font-Montserrat font-medium text-base md:text-xl pt-4 pb-4">Альбом Stray Kids The 3rd Album 5-STAR</p>
+                                            <div class="flex flex-col md:flex-row items-center md:items-start">
+                                                <div class="flex justify-center md:justify-start">
+                                                    <p class="font-Montserrat font-bold text-base md:text-2xl mb-3 md:mb-0">2000 р</p>
+                                                    <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 lg:block sm:hidden">
+                                                        <img class="bg-pink rounded-lg shadow-md shadow-main-black" src="./src/img/icons/favorite.svg" />
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/favorite.svg" class="bg-pink rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/cart.svg" class="bg-green rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                </div>  
+                                            </div>
+                                        </div>
+
+                                        
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Четвертый таб со слайдерами -->  
+                        <div id="photocard" class="_tabs-block"> 
+                            <div class="swiper-container overflow-hidden">      
+                                <div class="catalog-item-4">     
+                                    <div class="swiper-wrapper max-w-0 flex sm:flex-wrap lg:flex-nowrap">
+                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative">
+                                            <img class="test rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_3.png" />
+                                            <a href="#" class="absolute top-3 right-3 text-gray-500">
+                                                <img src="./src/img/icons/favorite.svg" />
+                                            </a>
+
+                                            <a href="#" class="absolute left-3 top-3 text-gray-500">
+                                                <img src="./src/img/order/sticker.png" />
+                                            </a>
+                                            <p class="font-Montserrat font-medium text-base md:text-xl pt-4 pb-4">Альбом Stray Kids The 3rd Album 5-STAR</p>
+                                            <div class="flex flex-col md:flex-row items-center md:items-start">
+                                                <div class="flex justify-center md:justify-start">
+                                                    <p class="font-Montserrat font-bold text-base md:text-2xl mb-3 md:mb-0">2000 р</p>
+                                                    <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 lg:block sm:hidden">
+                                                        <img class="bg-pink rounded-lg shadow-md shadow-main-black" src="./src/img/icons/favorite.svg" />
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/favorite.svg" class="bg-pink rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/cart.svg" class="bg-green rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative">
+                                            <img class="test rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_3.png" />
+                                            <a href="#" class="absolute top-3 right-3 text-gray-500">
+                                                <img src="./src/img/icons/favorite.svg" />
+                                            </a>
+
+                                            <a href="#" class="absolute left-3 top-3 text-gray-500">
+                                                <img src="./src/img/order/sticker.png" />
+                                            </a>
+                                            <p class="font-Montserrat font-medium text-base md:text-xl pt-4 pb-4">Альбом Stray Kids The 3rd Album 5-STAR</p>
+                                            <div class="flex flex-col md:flex-row items-center md:items-start">
+                                                <div class="flex justify-center md:justify-start">
+                                                    <p class="font-Montserrat font-bold text-base md:text-2xl mb-3 md:mb-0">2000 р</p>
+                                                    <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 lg:block sm:hidden">
+                                                        <img class="bg-pink rounded-lg shadow-md shadow-main-black" src="./src/img/icons/favorite.svg" />
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/favorite.svg" class="bg-pink rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/cart.svg" class="bg-green rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative">
+                                            <img class="test rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_3.png" />
+                                            <a href="#" class="absolute top-3 right-3 text-gray-500">
+                                                <img src="./src/img/icons/favorite.svg" />
+                                            </a>
+
+                                            <a href="#" class="absolute left-3 top-3 text-gray-500">
+                                                <img src="./src/img/order/sticker.png" />
+                                            </a>
+                                            <p class="font-Montserrat font-medium text-base md:text-xl pt-4 pb-4">Альбом Stray Kids The 3rd Album 5-STAR</p>
+                                            <div class="flex flex-col md:flex-row items-center md:items-start">
+                                                <div class="flex justify-center md:justify-start">
+                                                    <p class="font-Montserrat font-bold text-base md:text-2xl mb-3 md:mb-0">2000 р</p>
+                                                    <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 lg:block sm:hidden">
+                                                        <img class="bg-pink rounded-lg shadow-md shadow-main-black" src="./src/img/icons/favorite.svg" />
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/favorite.svg" class="bg-pink rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/cart.svg" class="bg-green rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative">
+                                            <img class="test rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_3.png" />
+                                            <a href="#" class="absolute top-3 right-3 text-gray-500">
+                                                <img src="./src/img/icons/favorite.svg" />
+                                            </a>
+
+                                            <a href="#" class="absolute left-3 top-3 text-gray-500">
+                                                <img src="./src/img/order/sticker.png" />
+                                            </a>
+                                            <p class="font-Montserrat font-medium text-base md:text-xl pt-4 pb-4">Альбом Stray Kids The 3rd Album 5-STAR</p>
+                                            <div class="flex flex-col md:flex-row items-center md:items-start">
+                                                <div class="flex justify-center md:justify-start">
+                                                    <p class="font-Montserrat font-bold text-base md:text-2xl mb-3 md:mb-0">2000 р</p>
+                                                    <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 lg:block sm:hidden">
+                                                        <img class="bg-pink rounded-lg shadow-md shadow-main-black" src="./src/img/icons/favorite.svg" />
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/favorite.svg" class="bg-pink rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/cart.svg" class="bg-green rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                </div>  
+                                            </div>
+                                        </div>
+
+                                        
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Пятый таб со слайдерами -->  
+                        <div id="lastic" class="_tabs-block"> 
+                            <div class="swiper-container overflow-hidden">      
+                                <div class="catalog-item-5">     
+                                    <div class="swiper-wrapper max-w-0 flex sm:flex-wrap lg:flex-nowrap">
+                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative">
+                                            <img class="test rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_1.png" />
+                                            <a href="#" class="absolute top-3 right-3 text-gray-500">
+                                                <img src="./src/img/icons/favorite.svg" />
+                                            </a>
+
+                                            <a href="#" class="absolute left-3 top-3 text-gray-500">
+                                                <img src="./src/img/order/sticker.png" />
+                                            </a>
+                                            <p class="font-Montserrat font-medium text-base md:text-xl pt-4 pb-4">Альбом Stray Kids The 3rd Album 5-STAR</p>
+                                            <div class="flex flex-col md:flex-row items-center md:items-start">
+                                                <div class="flex justify-center md:justify-start">
+                                                    <p class="font-Montserrat font-bold text-base md:text-2xl mb-3 md:mb-0">2000 р</p>
+                                                    <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 lg:block sm:hidden">
+                                                        <img class="bg-pink rounded-lg shadow-md shadow-main-black" src="./src/img/icons/favorite.svg" />
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/favorite.svg" class="bg-pink rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/cart.svg" class="bg-green rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative">
+                                            <img class="test rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_2.png" />
+                                            <a href="#" class="absolute top-3 right-3 text-gray-500">
+                                                <img src="./src/img/icons/favorite.svg" />
+                                            </a>
+
+                                            <a href="#" class="absolute left-3 top-3 text-gray-500">
+                                                <img src="./src/img/order/sticker.png" />
+                                            </a>
+                                            <p class="font-Montserrat font-medium text-base md:text-xl pt-4 pb-4">Альбом Stray Kids The 3rd Album 5-STAR</p>
+                                            <div class="flex flex-col md:flex-row items-center md:items-start">
+                                                <div class="flex justify-center md:justify-start">
+                                                    <p class="font-Montserrat font-bold text-base md:text-2xl mb-3 md:mb-0">2000 р</p>
+                                                    <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 lg:block sm:hidden">
+                                                        <img class="bg-pink rounded-lg shadow-md shadow-main-black" src="./src/img/icons/favorite.svg" />
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/favorite.svg" class="bg-pink rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/cart.svg" class="bg-green rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative">
+                                            <img class="test rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_4.png" />
+                                            <a href="#" class="absolute top-3 right-3 text-gray-500">
+                                                <img src="./src/img/icons/favorite.svg" />
+                                            </a>
+
+                                            <a href="#" class="absolute left-3 top-3 text-gray-500">
+                                                <img src="./src/img/order/sticker.png" />
+                                            </a>
+                                            <p class="font-Montserrat font-medium text-base md:text-xl pt-4 pb-4">Альбом Stray Kids The 3rd Album 5-STAR</p>
+                                            <div class="flex flex-col md:flex-row items-center md:items-start">
+                                                <div class="flex justify-center md:justify-start">
+                                                    <p class="font-Montserrat font-bold text-base md:text-2xl mb-3 md:mb-0">2000 р</p>
+                                                    <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 lg:block sm:hidden">
+                                                        <img class="bg-pink rounded-lg shadow-md shadow-main-black" src="./src/img/icons/favorite.svg" />
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/favorite.svg" class="bg-pink rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/cart.svg" class="bg-green rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative">
+                                            <img class="test rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_3.png" />
+                                            <a href="#" class="absolute top-3 right-3 text-gray-500">
+                                                <img src="./src/img/icons/favorite.svg" />
+                                            </a>
+
+                                            <a href="#" class="absolute left-3 top-3 text-gray-500">
+                                                <img src="./src/img/order/sticker.png" />
+                                            </a>
+                                            <p class="font-Montserrat font-medium text-base md:text-xl pt-4 pb-4">Альбом Stray Kids The 3rd Album 5-STAR</p>
+                                            <div class="flex flex-col md:flex-row items-center md:items-start">
+                                                <div class="flex justify-center md:justify-start">
+                                                    <p class="font-Montserrat font-bold text-base md:text-2xl mb-3 md:mb-0">2000 р</p>
+                                                    <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 lg:block sm:hidden">
+                                                        <img class="bg-pink rounded-lg shadow-md shadow-main-black" src="./src/img/icons/favorite.svg" />
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/favorite.svg" class="bg-pink rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/cart.svg" class="bg-green rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                </div>  
+                                            </div>
+                                        </div>
+
+                                        
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Шестой таб со слайдерами -->  
+                        <div id="merch" class="_tabs-block"> 
+                            <div class="swiper-container overflow-hidden">      
+                                <div class="catalog-item-6">     
+                                    <div class="swiper-wrapper max-w-0 flex sm:flex-wrap lg:flex-nowrap">
+                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative">
+                                            <img class="test rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_4.png" />
+                                            <a href="#" class="absolute top-3 right-3 text-gray-500">
+                                                <img src="./src/img/icons/favorite.svg" />
+                                            </a>
+
+                                            <a href="#" class="absolute left-3 top-3 text-gray-500">
+                                                <img src="./src/img/order/sticker.png" />
+                                            </a>
+                                            <p class="font-Montserrat font-medium text-base md:text-xl pt-4 pb-4">Альбом Stray Kids The 3rd Album 5-STAR</p>
+                                            <div class="flex flex-col md:flex-row items-center md:items-start">
+                                                <div class="flex justify-center md:justify-start">
+                                                    <p class="font-Montserrat font-bold text-base md:text-2xl mb-3 md:mb-0">2000 р</p>
+                                                    <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 lg:block sm:hidden">
+                                                        <img class="bg-pink rounded-lg shadow-md shadow-main-black" src="./src/img/icons/favorite.svg" />
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/favorite.svg" class="bg-pink rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/cart.svg" class="bg-green rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative">
+                                            <img class="test rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_4.png" />
+                                            <a href="#" class="absolute top-3 right-3 text-gray-500">
+                                                <img src="./src/img/icons/favorite.svg" />
+                                            </a>
+
+                                            <a href="#" class="absolute left-3 top-3 text-gray-500">
+                                                <img src="./src/img/order/sticker.png" />
+                                            </a>
+                                            <p class="font-Montserrat font-medium text-base md:text-xl pt-4 pb-4">Альбом Stray Kids The 3rd Album 5-STAR</p>
+                                            <div class="flex flex-col md:flex-row items-center md:items-start">
+                                                <div class="flex justify-center md:justify-start">
+                                                    <p class="font-Montserrat font-bold text-base md:text-2xl mb-3 md:mb-0">2000 р</p>
+                                                    <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 lg:block sm:hidden">
+                                                        <img class="bg-pink rounded-lg shadow-md shadow-main-black" src="./src/img/icons/favorite.svg" />
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/favorite.svg" class="bg-pink rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/cart.svg" class="bg-green rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative">
+                                            <img class="test rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_4.png" />
+                                            <a href="#" class="absolute top-3 right-3 text-gray-500">
+                                                <img src="./src/img/icons/favorite.svg" />
+                                            </a>
+
+                                            <a href="#" class="absolute left-3 top-3 text-gray-500">
+                                                <img src="./src/img/order/sticker.png" />
+                                            </a>
+                                            <p class="font-Montserrat font-medium text-base md:text-xl pt-4 pb-4">Альбом Stray Kids The 3rd Album 5-STAR</p>
+                                            <div class="flex flex-col md:flex-row items-center md:items-start">
+                                                <div class="flex justify-center md:justify-start">
+                                                    <p class="font-Montserrat font-bold text-base md:text-2xl mb-3 md:mb-0">2000 р</p>
+                                                    <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 lg:block sm:hidden">
+                                                        <img class="bg-pink rounded-lg shadow-md shadow-main-black" src="./src/img/icons/favorite.svg" />
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/favorite.svg" class="bg-pink rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                    <a class=" mx-3 sm:block md:hidden" href="#">
+                                                        <img src="./src/img/icons/cart.svg" class="bg-green rounded-lg shadow-md shadow-main-black"/>
+                                                    </a>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide bg-cover bg-center rounded-xl relative">
+                                            <img class="test rounded-xl bg-cover bg-no-repeat" src="./src/img/new/new_4.png" />
                                             <a href="#" class="absolute top-3 right-3 text-gray-500">
                                                 <img src="./src/img/icons/favorite.svg" />
                                             </a>
@@ -357,7 +918,7 @@
             
                 
 
-            <!-- <section class="new bg-bg new-swiper page-section-2">
+            <section class="new bg-bg new-swiper page-section-2">
                 <div class="container overflow-hidden pb-28">
                     <div class="new-item">
 
@@ -378,7 +939,7 @@
                         </div>
                         
                     </div>
-                        <div class="swiper-wrapper flex">
+                        <div class="swiper-wrapper max-w-0 flex sm:flex-wrap lg:flex-nowrap">
 
                             <div class="swiper-slide rounded-xl relative ">
                                 <img class="rounded-xl" src="./src/img/new/new_1.png" />
@@ -549,10 +1110,10 @@
                         </div>
         
                     </div>
-            </section> -->
+            </section>
 
 
-            <section class="clothes page-section-4 pt-28">
+            <section class="clothes page-section-4 lg:pt-28 sm:pt-10">
                 <div class="container flex justify-between items-center gap-10 flex-wrap lg:flex-row">
         
                     <div class="flex relative">
@@ -595,8 +1156,8 @@
                                 
                                 <img class="rounded-lg" src="./src/img/event/image 26.png" />
                                 <p class="pt-2 text-base lg:text-2xl font-bold font-Montserrat">DMC K-POP CAFE празднует День <br> Рождение Чимина</p>
-                                <div class="flex items-center justify-between">
-                                    <p class="text-sm lg:text-xl">Ждем в гости 14.10.2023</p>
+                                <div class="flex items-center lg:justify-between gap-3">
+                                    <p class="text-sm lg:text-xl pr-3">Ждем в гости 14.10.2023</p>
                                     <a href="#" class=" bg-green rounded-lg shadow-md shadow-main-black p-2">
                                         <img class="" src="./src/img/icons/arrow-corner.svg" alt="вправо" />
                                     </a>
@@ -606,14 +1167,14 @@
                                 
                                 <img class="rounded-lg" src="./src/img/event/image 26.png" />
                                 <p class="pt-2 text-base lg:text-2xl font-bold font-Montserrat">DMC K-POP CAFE празднует День <br> Рождение Чимина</p>
-                                <div class="flex items-center justify-between">
-                                    <p class="text-sm lg:text-xl">Ждем в гости 14.10.2023</p>
+                                <div class="flex items-center lg:justify-between gap-3">
+                                    <p class="text-sm lg:text-xl pr-3">Ждем в гости 14.10.2023</p>
                                     <a href="#" class=" bg-green rounded-lg shadow-md shadow-main-black p-2">
                                         <img class="" src="./src/img/icons/arrow-corner.svg" alt="вправо" />
                                     </a>
                                 </div>
                             </div>              
-                        </div>
+                           
                     </div>
                 </div>
             </section>
@@ -652,8 +1213,8 @@
                             </ul>
                         </p>
                         <p>
-                            <a href="#" class="text-green">
-                                <div>
+                            <a href="https://yandex.ru/maps/org/dms_k_pop/20433094477/?ll=131.908135%2C43.115424&z=14.66" class="text-green">
+                                <div class="">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
                                         <path d="M17 29.75C21.9583 24.65 26.9166 20.0832 26.9166 14.45C26.9166 8.8167 22.4768 4.25 17 4.25C11.5232 4.25 7.08331 8.8167 7.08331 14.45C7.08331 20.0832 12.0416 24.65 17 29.75Z" stroke="#6EC2A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M17 16.9999C18.5648 16.9999 19.8333 15.7314 19.8333 14.1666C19.8333 12.6018 18.5648 11.3333 17 11.3333C15.4351 11.3333 14.1666 12.6018 14.1666 14.1666C14.1666 15.7314 15.4351 16.9999 17 16.9999Z" stroke="#6EC2A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -711,7 +1272,13 @@
                         <li><a class="text-sm text-main-black mb-5 block transition hover:text-green font-semibold"
                                 href="mailto:info@urgent-cleaner.com">dmc_shop@mail.ru</a></li>
                         <li>
-                            <p class="text-sm text-green mb-5 decoration-green"><a href="#">Посмотреть на карте</a></p>
+                            <a href="https://yandex.ru/maps/org/dms_k_pop/20433094477/?ll=131.908135%2C43.115424&z=14.66">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                    <path d="M17 29.75C21.9583 24.65 26.9166 20.0832 26.9166 14.45C26.9166 8.8167 22.4768 4.25 17 4.25C11.5232 4.25 7.08331 8.8167 7.08331 14.45C7.08331 20.0832 12.0416 24.65 17 29.75Z" stroke="#6EC2A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17 16.9999C18.5648 16.9999 19.8333 15.7314 19.8333 14.1666C19.8333 12.6018 18.5648 11.3333 17 11.3333C15.4351 11.3333 14.1666 12.6018 14.1666 14.1666C14.1666 15.7314 15.4351 16.9999 17 16.9999Z" stroke="#6EC2A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                <p class="text-sm text-green mb-5 decoration-green"><a href="#">Посмотреть на карте</a></p>
+                            </a>
                         </li>
                     </ul>
                     

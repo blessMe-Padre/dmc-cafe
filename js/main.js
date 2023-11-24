@@ -5,7 +5,7 @@ import { initNewSlider } from "./module/new-slider.js";
 import { initStickyHeader } from "./module/sticky-header.js";
 import { showBands } from './data.js'
 import { initTabs } from "./module/tabs.js";
-import { initCatalogSlider1, initCatalogSlider2 } from "./module/catalog-slider.js";
+import { initCatalogSlider1, initCatalogSlider2, initCatalogSlider3, initCatalogSlider4, initCatalogSlider5, initCatalogSlider6 } from "./module/catalog-slider.js";
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -20,6 +20,10 @@ window.addEventListener('DOMContentLoaded', () => {
     initTabs();
     initCatalogSlider1();
     initCatalogSlider2();
+    initCatalogSlider3();
+    initCatalogSlider4();
+    initCatalogSlider5();
+    initCatalogSlider6();
 
     
 
