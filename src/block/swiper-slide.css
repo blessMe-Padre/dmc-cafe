@@ -9,11 +9,16 @@
     gap: 10;
   }
   
+
+@media (max-width: 767px) {
+  .swiper-wrapper {
+    
+  }
+} 
+
 @media (max-width: 767px) {
   .swiper-slide {
-    display: flex;
-    flex-wrap: wrap;
-
+    width: auto;
   }
 }
 
@@ -29,3 +34,6 @@
       width: 150px !important;
     }
   }
+
+
+

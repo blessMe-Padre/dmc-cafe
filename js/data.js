@@ -71,7 +71,9 @@ export const showBands = ()  => {
         const li = document.createElement('li');
         console.log('Отображаем первые 8 элементов')
 
-        img.classList.add('rounded-lg', 'md:w-[150px]', 'md:h-[150px]', 'w-[60px]', 'h-[60px]');
+        img.classList.add('band-img');
+        img.classList.add();
+
         img.src = bandsItem[i].src;
         img.alt = bandsItem[i].description;
         li.appendChild(img); 
@@ -79,6 +81,7 @@ export const showBands = ()  => {
     }
 
     const loadMoreButton = document.querySelector('.loadMoreButton');
+    const loadMoreText = document.querySelector('.loadMoreText');
     loadMoreButton.addEventListener('click', () => {
         
         for (let i = bandsItemToShow; i < bandsItemToShow + 4; i++) {
@@ -88,13 +91,14 @@ export const showBands = ()  => {
                 const img = document.createElement('img');
                 console.log('Отображаем первые 8 элементов')
                 const li = document.createElement('li'); 
-                img.classList.add('rounded-lg', 'md:w-[150px]', 'md:h-[150px]', 'w-[60px]', 'h-[60px]');
+                img.classList.add('band-img');
                 img.src = bandsItem[i].src;
                 img.alt = bandsItem[i].description;
                 li.appendChild(img); 
                 bandsList.appendChild(li); 
             } else {
                 loadMoreButton.style.display = 'none'; 
+                loadMoreText.style.display = 'none'
                 break;
             }
         }
