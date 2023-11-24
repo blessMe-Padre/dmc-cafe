@@ -1,0 +1,24 @@
+.modal-wrapper {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 10px 4px 6px #369C7C;
+    transition: opacity 0.3s ease;
+    /* visibility: hidden;
+    opacity: 0; */
+  }
+
+  .modal-content {
+    padding: 12px;
+  }
+  
+  /* Стили для регистрации и входа (добавьте свойства по вашему усмотрению) */
+  .text-green {
+    color: green;
+  }
+  
+  .text-pink {
+    color: pink;
+  }
