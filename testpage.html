@@ -11,309 +11,323 @@
 </head>
 
 <body>
+    <div class="h-screen">
+        <header></header>
+        <main>
 
-    <!-- Это секция с рабочим grid (vw < 460px) слайдером"-->
-    <div class="container">
-        <section class="new-items-section">
+            <!-- Это секция с рабочим grid (vw < 460px) слайдером"-->
+            <div class="container">
+                <section class="new-items-section">
 
-            <div class="flex items-center justify-between">
-                <h2
-                    class="lg:text-6xl sm:text-3xl text-jost font-extrabold uppercase underline decoration-green decoration-8 pt-10 pb-10">
-                    Новинки</h2>
+                    <div class="flex items-center justify-between">
+                        <h2
+                            class="lg:text-6xl sm:text-3xl text-jost font-extrabold uppercase underline decoration-green decoration-8 pt-10 pb-10">
+                            Новинки</h2>
 
-                <div class="swiper-pagination"></div>
-                <div>
-                    <button class="prev-new--item bg-pink rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
-                        <img src="./src/img/icons/arrow-left.svg" alt="влево" />
-                    </button>
-                    <button class="next-new--item bg-pink rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
-                        <img src="./src/img/icons/arrow-rigth.svg" alt="вправо" />
-                    </button>
-                </div>
+                        <div class="swiper-pagination"></div>
+                        <div>
+                            <button
+                                class="prev-new--item bg-pink rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
+                                <img src="./src/img/icons/arrow-left.svg" alt="влево" />
+                            </button>
+                            <button
+                                class="next-new--item bg-pink rounded-lg shadow-md shadow-main-black -z-0 px-3 py-2">
+                                <img src="./src/img/icons/arrow-rigth.svg" alt="вправо" />
+                            </button>
+                        </div>
 
+                    </div>
+
+                    <div class="swiper new-items-2">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide rounded-xl relative ">
+                                <div class="new-items-section__img">
+                                    <img class="rounded-xl" src="./src/img/new/new_1.png" />
+                                </div>
+
+                                <a href="#" class="absolute left-3 top-3 text-gray-500 w-40">
+                                    <span class="font-medium top-1 relative z-[2]">В наличии</span>
+                                    <img class="absolute top-0 left-0" src="./src/img/order/sticker_2.png" height="40"
+                                        width="160" />
+                                </a>
+                                <p class=" font-medium text-xs sm:text-base md:text-xl pt-2 pb-2">Альбом Stray Kids The
+                                    3rd
+                                    Album 5-STAR
+                                </p>
+                                <div class="flex flex-col md:flex-row items-center md:items-start">
+                                    <div class="flex items-center justify-center md:justify-start">
+                                        <p class="mr-2 font-bold text-base md:text-2xl md:mb-0">2000 р</p>
+                                        <a href="#"
+                                            class="absolute top-3 right-3 text-gray-500 mx-3 sm:hidden lg:block">
+                                            <img class="bg-pink rounded-lg shadow-md shadow-main-black"
+                                                src="./src/img/icons/favorite.svg" />
+                                        </a>
+                                        <a class=" mx-1 sm:block md:hidden" href="#">
+                                            <img src="./src/img/icons/favorite.svg"
+                                                class="bg-pink rounded-lg shadow-md shadow-main-black" />
+                                        </a>
+                                        <a class=" mx-1 sm:block md:hidden" href="#">
+                                            <img src="./src/img/icons/cart.svg"
+                                                class="bg-green rounded-lg shadow-md shadow-main-black" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide rounded-xl relative ">
+                                <div class="new-items-section__img">
+                                    <img class="rounded-xl" src="./src/img/new/new_1.png" />
+                                </div>
+                                <a href="#" class="absolute top-3 right-3 text-gray-500">
+                                    <img src="./src/img/icons/favorite.svg" />
+                                </a>
+
+                                <a href="#" class="absolute left-3 top-3 text-gray-500">
+                                    <img src="./src/img/order/sticker.png" />
+                                </a>
+                                <p class=" font-medium text-xs sm:text-base md:text-xl pt-2 pb-2">Альбом Stray Kids The
+                                    3rd
+                                    Album 5-STAR
+                                </p>
+                                <div class="flex flex-col md:flex-row items-center md:items-start">
+                                    <div class="flex items-center justify-center md:justify-start">
+                                        <p class="mr-2 font-bold text-base md:text-2xl md:mb-0">2000 р</p>
+                                        <a href="#"
+                                            class="absolute top-3 right-3 text-gray-500 mx-3 sm:hidden lg:block">
+                                            <img class="bg-pink rounded-lg shadow-md shadow-main-black"
+                                                src="./src/img/icons/favorite.svg" />
+                                        </a>
+                                        <a class=" mx-1 sm:block md:hidden" href="#">
+                                            <img src="./src/img/icons/favorite.svg"
+                                                class="bg-pink rounded-lg shadow-md shadow-main-black" />
+                                        </a>
+                                        <a class=" mx-1 sm:block md:hidden" href="#">
+                                            <img src="./src/img/icons/cart.svg"
+                                                class="bg-green rounded-lg shadow-md shadow-main-black" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide rounded-xl relative ">
+                                <div class="new-items-section__img">
+                                    <img class="rounded-xl" src="./src/img/new/new_1.png" />
+                                </div>
+                                <a href="#" class="absolute top-3 right-3 text-gray-500">
+                                    <img src="./src/img/icons/favorite.svg" />
+                                </a>
+
+                                <a href="#" class="absolute left-3 top-3 text-gray-500">
+                                    <img src="./src/img/order/sticker.png" />
+                                </a>
+                                <p class=" font-medium text-xs sm:text-base md:text-xl pt-2 pb-2">Альбом Stray Kids The
+                                    3rd
+                                    Album 5-STAR
+                                </p>
+                                <div class="flex flex-col md:flex-row items-center md:items-start">
+                                    <div class="flex items-center justify-center md:justify-start">
+                                        <p class="mr-2 font-bold text-base md:text-2xl md:mb-0">2000 р</p>
+                                        <a href="#"
+                                            class="absolute top-3 right-3 text-gray-500 mx-3 sm:hidden lg:block">
+                                            <img class="bg-pink rounded-lg shadow-md shadow-main-black"
+                                                src="./src/img/icons/favorite.svg" />
+                                        </a>
+                                        <a class=" mx-1 sm:block md:hidden" href="#">
+                                            <img src="./src/img/icons/favorite.svg"
+                                                class="bg-pink rounded-lg shadow-md shadow-main-black" />
+                                        </a>
+                                        <a class=" mx-1 sm:block md:hidden" href="#">
+                                            <img src="./src/img/icons/cart.svg"
+                                                class="bg-green rounded-lg shadow-md shadow-main-black" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide rounded-xl relative ">
+                                <div class="new-items-section__img">
+                                    <img class="rounded-xl" src="./src/img/new/new_1.png" />
+                                </div>
+                                <a href="#" class="absolute top-3 right-3 text-gray-500">
+                                    <img src="./src/img/icons/favorite.svg" />
+                                </a>
+
+                                <a href="#" class="absolute left-3 top-3 text-gray-500">
+                                    <img src="./src/img/order/sticker.png" />
+                                </a>
+                                <p class=" font-medium text-xs sm:text-base md:text-xl pt-2 pb-2">Альбом Stray Kids The
+                                    3rd
+                                    Album 5-STAR
+                                </p>
+                                <div class="flex flex-col md:flex-row items-center md:items-start">
+                                    <div class="flex items-center justify-center md:justify-start">
+                                        <p class="mr-2 font-bold text-base md:text-2xl md:mb-0">2000 р</p>
+                                        <a href="#"
+                                            class="absolute top-3 right-3 text-gray-500 mx-3 sm:hidden lg:block">
+                                            <img class="bg-pink rounded-lg shadow-md shadow-main-black"
+                                                src="./src/img/icons/favorite.svg" />
+                                        </a>
+                                        <a class=" mx-1 sm:block md:hidden" href="#">
+                                            <img src="./src/img/icons/favorite.svg"
+                                                class="bg-pink rounded-lg shadow-md shadow-main-black" />
+                                        </a>
+                                        <a class=" mx-1 sm:block md:hidden" href="#">
+                                            <img src="./src/img/icons/cart.svg"
+                                                class="bg-green rounded-lg shadow-md shadow-main-black" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide rounded-xl relative ">
+                                <div class="new-items-section__img">
+                                    <img class="rounded-xl" src="./src/img/new/new_1.png" />
+                                </div>
+                                <a href="#" class="absolute top-3 right-3 text-gray-500">
+                                    <img src="./src/img/icons/favorite.svg" />
+                                </a>
+
+                                <a href="#" class="absolute left-3 top-3 text-gray-500">
+                                    <img src="./src/img/order/sticker.png" />
+                                </a>
+                                <p class=" font-medium text-xs sm:text-base md:text-xl pt-2 pb-2">Альбом Stray Kids The
+                                    3rd
+                                    Album 5-STAR
+                                </p>
+                                <div class="flex flex-col md:flex-row items-center md:items-start">
+                                    <div class="flex items-center justify-center md:justify-start">
+                                        <p class="mr-2 font-bold text-base md:text-2xl md:mb-0">2000 р</p>
+                                        <a href="#"
+                                            class="absolute top-3 right-3 text-gray-500 mx-3 sm:hidden lg:block">
+                                            <img class="bg-pink rounded-lg shadow-md shadow-main-black"
+                                                src="./src/img/icons/favorite.svg" />
+                                        </a>
+                                        <a class=" mx-1 sm:block md:hidden" href="#">
+                                            <img src="./src/img/icons/favorite.svg"
+                                                class="bg-pink rounded-lg shadow-md shadow-main-black" />
+                                        </a>
+                                        <a class=" mx-1 sm:block md:hidden" href="#">
+                                            <img src="./src/img/icons/cart.svg"
+                                                class="bg-green rounded-lg shadow-md shadow-main-black" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide rounded-xl relative ">
+                                <div class="new-items-section__img">
+                                    <img class="rounded-xl" src="./src/img/new/new_1.png" />
+                                </div>
+                                <a href="#" class="absolute top-3 right-3 text-gray-500">
+                                    <img src="./src/img/icons/favorite.svg" />
+                                </a>
+
+                                <a href="#" class="absolute left-3 top-3 text-gray-500">
+                                    <img src="./src/img/order/sticker.png" />
+                                </a>
+                                <p class=" font-medium text-xs sm:text-base md:text-xl pt-2 pb-2">Альбом Stray Kids The
+                                    3rd
+                                    Album 5-STAR
+                                </p>
+                                <div class="flex flex-col md:flex-row items-center md:items-start">
+                                    <div class="flex items-center justify-center md:justify-start">
+                                        <p class="mr-2 font-bold text-base md:text-2xl md:mb-0">2000 р</p>
+                                        <a href="#"
+                                            class="absolute top-3 right-3 text-gray-500 mx-3 sm:hidden lg:block">
+                                            <img class="bg-pink rounded-lg shadow-md shadow-main-black"
+                                                src="./src/img/icons/favorite.svg" />
+                                        </a>
+                                        <a class=" mx-1 sm:block md:hidden" href="#">
+                                            <img src="./src/img/icons/favorite.svg"
+                                                class="bg-pink rounded-lg shadow-md shadow-main-black" />
+                                        </a>
+                                        <a class=" mx-1 sm:block md:hidden" href="#">
+                                            <img src="./src/img/icons/cart.svg"
+                                                class="bg-green rounded-lg shadow-md shadow-main-black" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide rounded-xl relative ">
+                                <div class="new-items-section__img">
+                                    <img class="rounded-xl" src="./src/img/new/new_1.png" />
+                                </div>
+                                <a href="#" class="absolute top-3 right-3 text-gray-500">
+                                    <img src="./src/img/icons/favorite.svg" />
+                                </a>
+
+                                <a href="#" class="absolute left-3 top-3 text-gray-500">
+                                    <img src="./src/img/order/sticker.png" />
+                                </a>
+                                <p class=" font-medium text-xs sm:text-base md:text-xl pt-2 pb-2">Альбом Stray Kids The
+                                    3rd
+                                    Album 5-STAR
+                                </p>
+                                <div class="flex flex-col md:flex-row items-center md:items-start">
+                                    <div class="flex items-center justify-center md:justify-start">
+                                        <p class="mr-2 font-bold text-base md:text-2xl md:mb-0">2000 р</p>
+                                        <a href="#"
+                                            class="absolute top-3 right-3 text-gray-500 mx-3 sm:hidden lg:block">
+                                            <img class="bg-pink rounded-lg shadow-md shadow-main-black"
+                                                src="./src/img/icons/favorite.svg" />
+                                        </a>
+                                        <a class=" mx-1 sm:block md:hidden" href="#">
+                                            <img src="./src/img/icons/favorite.svg"
+                                                class="bg-pink rounded-lg shadow-md shadow-main-black" />
+                                        </a>
+                                        <a class=" mx-1 sm:block md:hidden" href="#">
+                                            <img src="./src/img/icons/cart.svg"
+                                                class="bg-green rounded-lg shadow-md shadow-main-black" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide rounded-xl relative ">
+                                <div class="new-items-section__img">
+                                    <img class="rounded-xl" src="./src/img/new/new_1.png" />
+                                </div>
+                                <a href="#" class="absolute top-3 right-3 text-gray-500">
+                                    <img src="./src/img/icons/favorite.svg" />
+                                </a>
+
+                                <a href="#" class="absolute left-3 top-3 text-gray-500">
+                                    <img src="./src/img/order/sticker.png" />
+                                </a>
+                                <p class=" font-medium text-xs sm:text-base md:text-xl pt-2 pb-2">Альбом Stray Kids The
+                                    3rd
+                                    Album 5-STAR
+                                </p>
+                                <div class="flex flex-col md:flex-row items-center md:items-start">
+                                    <div class="flex items-center justify-center md:justify-start">
+                                        <p class="mr-2 font-bold text-base md:text-2xl md:mb-0">2000 р</p>
+                                        <a href="#"
+                                            class="absolute top-3 right-3 text-gray-500 mx-3 sm:hidden lg:block">
+                                            <img class="bg-pink rounded-lg shadow-md shadow-main-black"
+                                                src="./src/img/icons/favorite.svg" />
+                                        </a>
+                                        <a class=" mx-1 sm:block md:hidden" href="#">
+                                            <img src="./src/img/icons/favorite.svg"
+                                                class="bg-pink rounded-lg shadow-md shadow-main-black" />
+                                        </a>
+                                        <a class=" mx-1 sm:block md:hidden" href="#">
+                                            <img src="./src/img/icons/cart.svg"
+                                                class="bg-green rounded-lg shadow-md shadow-main-black" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
             </div>
-
-            <div class="swiper new-items-2">
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide rounded-xl relative ">
-                        <div class="new-items-section__img">
-                            <img class="rounded-xl" src="./src/img/new/new_1.png" />
-                        </div>
-                        <a href="#" class="absolute top-3 right-3 text-gray-500">
-                            <img src="./src/img/icons/favorite.svg" />
-                        </a>
-
-                        <a href="#" class="absolute left-3 top-3 text-gray-500">
-                            <img src="./src/img/order/sticker.png" />
-                        </a>
-                        <p class=" font-medium text-xs sm:text-base md:text-xl pt-2 pb-2">Альбом Stray Kids The
-                            3rd
-                            Album 5-STAR
-                        </p>
-                        <div class="flex flex-col md:flex-row items-center md:items-start">
-                            <div class="flex items-center justify-center md:justify-start">
-                                <p class="mr-2 font-bold text-base md:text-2xl md:mb-0">2000 р</p>
-                                <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 sm:hidden lg:block">
-                                    <img class="bg-pink rounded-lg shadow-md shadow-main-black"
-                                        src="./src/img/icons/favorite.svg" />
-                                </a>
-                                <a class=" mx-1 sm:block md:hidden" href="#">
-                                    <img src="./src/img/icons/favorite.svg"
-                                        class="bg-pink rounded-lg shadow-md shadow-main-black" />
-                                </a>
-                                <a class=" mx-1 sm:block md:hidden" href="#">
-                                    <img src="./src/img/icons/cart.svg"
-                                        class="bg-green rounded-lg shadow-md shadow-main-black" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide rounded-xl relative ">
-                        <div class="new-items-section__img">
-                            <img class="rounded-xl" src="./src/img/new/new_1.png" />
-                        </div>
-                        <a href="#" class="absolute top-3 right-3 text-gray-500">
-                            <img src="./src/img/icons/favorite.svg" />
-                        </a>
-
-                        <a href="#" class="absolute left-3 top-3 text-gray-500">
-                            <img src="./src/img/order/sticker.png" />
-                        </a>
-                        <p class=" font-medium text-xs sm:text-base md:text-xl pt-2 pb-2">Альбом Stray Kids The
-                            3rd
-                            Album 5-STAR
-                        </p>
-                        <div class="flex flex-col md:flex-row items-center md:items-start">
-                            <div class="flex items-center justify-center md:justify-start">
-                                <p class="mr-2 font-bold text-base md:text-2xl md:mb-0">2000 р</p>
-                                <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 sm:hidden lg:block">
-                                    <img class="bg-pink rounded-lg shadow-md shadow-main-black"
-                                        src="./src/img/icons/favorite.svg" />
-                                </a>
-                                <a class=" mx-1 sm:block md:hidden" href="#">
-                                    <img src="./src/img/icons/favorite.svg"
-                                        class="bg-pink rounded-lg shadow-md shadow-main-black" />
-                                </a>
-                                <a class=" mx-1 sm:block md:hidden" href="#">
-                                    <img src="./src/img/icons/cart.svg"
-                                        class="bg-green rounded-lg shadow-md shadow-main-black" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide rounded-xl relative ">
-                        <div class="new-items-section__img">
-                            <img class="rounded-xl" src="./src/img/new/new_1.png" />
-                        </div>
-                        <a href="#" class="absolute top-3 right-3 text-gray-500">
-                            <img src="./src/img/icons/favorite.svg" />
-                        </a>
-
-                        <a href="#" class="absolute left-3 top-3 text-gray-500">
-                            <img src="./src/img/order/sticker.png" />
-                        </a>
-                        <p class=" font-medium text-xs sm:text-base md:text-xl pt-2 pb-2">Альбом Stray Kids The
-                            3rd
-                            Album 5-STAR
-                        </p>
-                        <div class="flex flex-col md:flex-row items-center md:items-start">
-                            <div class="flex items-center justify-center md:justify-start">
-                                <p class="mr-2 font-bold text-base md:text-2xl md:mb-0">2000 р</p>
-                                <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 sm:hidden lg:block">
-                                    <img class="bg-pink rounded-lg shadow-md shadow-main-black"
-                                        src="./src/img/icons/favorite.svg" />
-                                </a>
-                                <a class=" mx-1 sm:block md:hidden" href="#">
-                                    <img src="./src/img/icons/favorite.svg"
-                                        class="bg-pink rounded-lg shadow-md shadow-main-black" />
-                                </a>
-                                <a class=" mx-1 sm:block md:hidden" href="#">
-                                    <img src="./src/img/icons/cart.svg"
-                                        class="bg-green rounded-lg shadow-md shadow-main-black" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide rounded-xl relative ">
-                        <div class="new-items-section__img">
-                            <img class="rounded-xl" src="./src/img/new/new_1.png" />
-                        </div>
-                        <a href="#" class="absolute top-3 right-3 text-gray-500">
-                            <img src="./src/img/icons/favorite.svg" />
-                        </a>
-
-                        <a href="#" class="absolute left-3 top-3 text-gray-500">
-                            <img src="./src/img/order/sticker.png" />
-                        </a>
-                        <p class=" font-medium text-xs sm:text-base md:text-xl pt-2 pb-2">Альбом Stray Kids The
-                            3rd
-                            Album 5-STAR
-                        </p>
-                        <div class="flex flex-col md:flex-row items-center md:items-start">
-                            <div class="flex items-center justify-center md:justify-start">
-                                <p class="mr-2 font-bold text-base md:text-2xl md:mb-0">2000 р</p>
-                                <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 sm:hidden lg:block">
-                                    <img class="bg-pink rounded-lg shadow-md shadow-main-black"
-                                        src="./src/img/icons/favorite.svg" />
-                                </a>
-                                <a class=" mx-1 sm:block md:hidden" href="#">
-                                    <img src="./src/img/icons/favorite.svg"
-                                        class="bg-pink rounded-lg shadow-md shadow-main-black" />
-                                </a>
-                                <a class=" mx-1 sm:block md:hidden" href="#">
-                                    <img src="./src/img/icons/cart.svg"
-                                        class="bg-green rounded-lg shadow-md shadow-main-black" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide rounded-xl relative ">
-                        <div class="new-items-section__img">
-                            <img class="rounded-xl" src="./src/img/new/new_1.png" />
-                        </div>
-                        <a href="#" class="absolute top-3 right-3 text-gray-500">
-                            <img src="./src/img/icons/favorite.svg" />
-                        </a>
-
-                        <a href="#" class="absolute left-3 top-3 text-gray-500">
-                            <img src="./src/img/order/sticker.png" />
-                        </a>
-                        <p class=" font-medium text-xs sm:text-base md:text-xl pt-2 pb-2">Альбом Stray Kids The
-                            3rd
-                            Album 5-STAR
-                        </p>
-                        <div class="flex flex-col md:flex-row items-center md:items-start">
-                            <div class="flex items-center justify-center md:justify-start">
-                                <p class="mr-2 font-bold text-base md:text-2xl md:mb-0">2000 р</p>
-                                <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 sm:hidden lg:block">
-                                    <img class="bg-pink rounded-lg shadow-md shadow-main-black"
-                                        src="./src/img/icons/favorite.svg" />
-                                </a>
-                                <a class=" mx-1 sm:block md:hidden" href="#">
-                                    <img src="./src/img/icons/favorite.svg"
-                                        class="bg-pink rounded-lg shadow-md shadow-main-black" />
-                                </a>
-                                <a class=" mx-1 sm:block md:hidden" href="#">
-                                    <img src="./src/img/icons/cart.svg"
-                                        class="bg-green rounded-lg shadow-md shadow-main-black" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide rounded-xl relative ">
-                        <div class="new-items-section__img">
-                            <img class="rounded-xl" src="./src/img/new/new_1.png" />
-                        </div>
-                        <a href="#" class="absolute top-3 right-3 text-gray-500">
-                            <img src="./src/img/icons/favorite.svg" />
-                        </a>
-
-                        <a href="#" class="absolute left-3 top-3 text-gray-500">
-                            <img src="./src/img/order/sticker.png" />
-                        </a>
-                        <p class=" font-medium text-xs sm:text-base md:text-xl pt-2 pb-2">Альбом Stray Kids The
-                            3rd
-                            Album 5-STAR
-                        </p>
-                        <div class="flex flex-col md:flex-row items-center md:items-start">
-                            <div class="flex items-center justify-center md:justify-start">
-                                <p class="mr-2 font-bold text-base md:text-2xl md:mb-0">2000 р</p>
-                                <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 sm:hidden lg:block">
-                                    <img class="bg-pink rounded-lg shadow-md shadow-main-black"
-                                        src="./src/img/icons/favorite.svg" />
-                                </a>
-                                <a class=" mx-1 sm:block md:hidden" href="#">
-                                    <img src="./src/img/icons/favorite.svg"
-                                        class="bg-pink rounded-lg shadow-md shadow-main-black" />
-                                </a>
-                                <a class=" mx-1 sm:block md:hidden" href="#">
-                                    <img src="./src/img/icons/cart.svg"
-                                        class="bg-green rounded-lg shadow-md shadow-main-black" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide rounded-xl relative ">
-                        <div class="new-items-section__img">
-                            <img class="rounded-xl" src="./src/img/new/new_1.png" />
-                        </div>
-                        <a href="#" class="absolute top-3 right-3 text-gray-500">
-                            <img src="./src/img/icons/favorite.svg" />
-                        </a>
-
-                        <a href="#" class="absolute left-3 top-3 text-gray-500">
-                            <img src="./src/img/order/sticker.png" />
-                        </a>
-                        <p class=" font-medium text-xs sm:text-base md:text-xl pt-2 pb-2">Альбом Stray Kids The
-                            3rd
-                            Album 5-STAR
-                        </p>
-                        <div class="flex flex-col md:flex-row items-center md:items-start">
-                            <div class="flex items-center justify-center md:justify-start">
-                                <p class="mr-2 font-bold text-base md:text-2xl md:mb-0">2000 р</p>
-                                <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 sm:hidden lg:block">
-                                    <img class="bg-pink rounded-lg shadow-md shadow-main-black"
-                                        src="./src/img/icons/favorite.svg" />
-                                </a>
-                                <a class=" mx-1 sm:block md:hidden" href="#">
-                                    <img src="./src/img/icons/favorite.svg"
-                                        class="bg-pink rounded-lg shadow-md shadow-main-black" />
-                                </a>
-                                <a class=" mx-1 sm:block md:hidden" href="#">
-                                    <img src="./src/img/icons/cart.svg"
-                                        class="bg-green rounded-lg shadow-md shadow-main-black" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide rounded-xl relative ">
-                        <div class="new-items-section__img">
-                            <img class="rounded-xl" src="./src/img/new/new_1.png" />
-                        </div>
-                        <a href="#" class="absolute top-3 right-3 text-gray-500">
-                            <img src="./src/img/icons/favorite.svg" />
-                        </a>
-
-                        <a href="#" class="absolute left-3 top-3 text-gray-500">
-                            <img src="./src/img/order/sticker.png" />
-                        </a>
-                        <p class=" font-medium text-xs sm:text-base md:text-xl pt-2 pb-2">Альбом Stray Kids The
-                            3rd
-                            Album 5-STAR
-                        </p>
-                        <div class="flex flex-col md:flex-row items-center md:items-start">
-                            <div class="flex items-center justify-center md:justify-start">
-                                <p class="mr-2 font-bold text-base md:text-2xl md:mb-0">2000 р</p>
-                                <a href="#" class="absolute top-3 right-3 text-gray-500 mx-3 sm:hidden lg:block">
-                                    <img class="bg-pink rounded-lg shadow-md shadow-main-black"
-                                        src="./src/img/icons/favorite.svg" />
-                                </a>
-                                <a class=" mx-1 sm:block md:hidden" href="#">
-                                    <img src="./src/img/icons/favorite.svg"
-                                        class="bg-pink rounded-lg shadow-md shadow-main-black" />
-                                </a>
-                                <a class=" mx-1 sm:block md:hidden" href="#">
-                                    <img src="./src/img/icons/cart.svg"
-                                        class="bg-green rounded-lg shadow-md shadow-main-black" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </section>
+        </main>
+        <footer></footer>
     </div>
-
     <!-- Swiper JS -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
     <script src="js/swiper-bundle.min.js"></script>

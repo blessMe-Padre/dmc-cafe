@@ -1235,6 +1235,7 @@ textarea.form__input {
 .new-items-section {
   background-color: #FFF4F5;
   padding: 50px 0;
+  height: 700px;
 }
 
 .new-items-section__img img {
@@ -1256,6 +1257,10 @@ textarea.form__input {
   font-size: 18px;
   background: #fff;
   height: calc((100% - 30px) / 2) !important;
+}
+
+.new-items-section .swiper-button-disabled {
+  opacity: 0.6;
 }
 
 @media(max-width: 460px) {
@@ -1870,6 +1875,10 @@ body {
   bottom: 2.25rem;
 }
 
+.left-0{
+  left: 0px;
+}
+
 .left-3{
   left: 0.75rem;
 }
@@ -1884,6 +1893,14 @@ body {
 
 .right-6{
   right: 1.5rem;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.top-1{
+  top: 0.25rem;
 }
 
 .top-3{
@@ -1904,6 +1921,10 @@ body {
 
 .z-10{
   z-index: 10;
+}
+
+.z-\[2\]{
+  z-index: 2;
 }
 
 .mx-1{
@@ -1986,6 +2007,10 @@ body {
 
 .w-0{
   width: 0px;
+}
+
+.w-40{
+  width: 10rem;
 }
 
 .w-\[60px\]{
