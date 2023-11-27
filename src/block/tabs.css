@@ -49,3 +49,10 @@
     
     display: flex;
 }
+
+@media(max-width:767px) {
+    ._tabs-item {
+        padding: 5px;
+        width: 150px;
+    }
+}
