@@ -1,0 +1,32 @@
+.catalog-form {}
+
+.catalog-form__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.catalog-form__label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    border: 2px solid var(--Black, #303030);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.catalog-form__label span {
+    color: #303030;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.catalog-form__input {
+    border-radius: 10px;
+}
+
+.catalog-form__input:checked+.catalog-form__label {
+    border-radius: 10px;
+    box-shadow: 6px 6px 0px 0px #6EC2A7;
+}

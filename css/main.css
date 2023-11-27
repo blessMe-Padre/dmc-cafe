@@ -279,7 +279,8 @@ body.is-dark {
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper>.swiper-slide:first-child{
-  margin-inline-start:var(--swiper-centered-offset-before)
+  -webkit-margin-start:var(--swiper-centered-offset-before);
+          margin-inline-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper::before{
@@ -289,7 +290,8 @@ body.is-dark {
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper>.swiper-slide:first-child{
-  margin-block-start:var(--swiper-centered-offset-before)
+  -webkit-margin-before:var(--swiper-centered-offset-before);
+          margin-block-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper::before{
@@ -1269,9 +1271,53 @@ textarea.form__input {
   }
 }
 
+.breadcrumb {
+  padding: 20px 0;
+  z-index: 1;
+}
+
+.breadcrumb__list {
+  display: flex;
+  gap: 10px;
+}
+
+.catalog-form {
+}
+
+.catalog-form__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.catalog-form__label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  border: 2px solid var(--Black, #303030);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.catalog-form__label span {
+  color: #303030;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.catalog-form__input {
+  border-radius: 10px;
+}
+
+.catalog-form__input:checked+.catalog-form__label {
+  border-radius: 10px;
+  box-shadow: 6px 6px 0px 0px #6EC2A7;
+}
+
 /* Импорт TailWind */
 
-/* ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -1997,6 +2043,10 @@ body {
   display: none;
 }
 
+.h-5{
+  height: 1.25rem;
+}
+
 .h-\[60px\]{
   height: 60px;
 }
@@ -2011,6 +2061,10 @@ body {
 
 .w-40{
   width: 10rem;
+}
+
+.w-5{
+  width: 1.25rem;
 }
 
 .w-\[60px\]{
@@ -2323,6 +2377,10 @@ body {
 
 .decoration-8{
   text-decoration-thickness: 8px;
+}
+
+.opacity-60{
+  opacity: 0.6;
 }
 
 .shadow-md{

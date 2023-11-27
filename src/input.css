@@ -17,7 +17,8 @@
 @import './block/bandsButton.css';
 @import './block/modal.css';
 @import './block/new-items-section.css';
-
+@import './block/breadcrumbs.css';
+@import './block/catalog-form.css';
 
 
 /* Импорт TailWind */
