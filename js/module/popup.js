@@ -1,4 +1,12 @@
 export const initPopup = () => {
+        document.getElementById("openPopup").addEventListener("click", function() {
+        document.getElementById("popup").style.display = "block";
+      });
+      
+      // Закрыть всплывающее окно при нажатии на кнопку закрытия
+      document.getElementById("closePopup").addEventListener("click", function() {
+        document.getElementById("popup").style.display = "none";
+      });
 
     // popup =========================================================================================
 
@@ -127,3 +135,4 @@ export const initPopup = () => {
     })();
 
 }
+

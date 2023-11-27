@@ -4,10 +4,12 @@ import { initMenu } from "./module/menu.js";
 import { initNewSlider } from "./module/new-slider.js";
 import { initStickyHeader } from "./module/sticky-header.js";
 import { initTabs } from "./module/tabs.js";
-import { initCatalogSlider1, initCatalogSlider2, initCatalogSlider3, initCatalogSlider4, initCatalogSlider5, initCatalogSlider6 } from "./module/catalog-slider.js";
-import { initModal } from "./module/modal.js";
-import { initLoadMore } from "./module/loadMore.js";
-import { initGeneralSlider } from "./module/general-slider.js";
+import { initLoadMore, initLoadMore2 } from "./module/loadMore.js";
+import { initGeneralSlider2, initGeneralSlider3, initGeneralSlider4, initGeneralSlider5, initGeneralSlider6, initGeneralSlider7 } from "./module/general-slider.js";
+import { initGeneralSlider1 } from "./module/general-slider.js";
+import { initNavModal} from './module/nav-modal.js'
+
+
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -19,14 +21,16 @@ window.addEventListener('DOMContentLoaded', () => {
     initStickyHeader();
     initEventSlider();
     initTabs();
-    initCatalogSlider1();
-    initCatalogSlider2();
-    initCatalogSlider3();
-    initCatalogSlider4();
-    initCatalogSlider5();
-    initCatalogSlider6();
     initLoadMore();
-    initModal();
-    initGeneralSlider();
+    initLoadMore2();
+    initGeneralSlider1();
+    initGeneralSlider2();
+    initGeneralSlider7();
+    initGeneralSlider3();
+    initGeneralSlider4();
+    initGeneralSlider5();
+    initGeneralSlider6();
+    initNavModal();
+    
 
 });
