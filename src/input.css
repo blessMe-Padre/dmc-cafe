@@ -13,12 +13,14 @@
 @import './block/popup.css';
 @import './block/event-slider.css';
 /* @import './block/main-slider.css'; */
-@import './block/new-slider.css';
+/* @import './block/new-slider.css'; */
 @import './block/bandsButton.css';
 @import './block/modal.css';
 @import './block/new-items-section.css';
 @import './block/breadcrumbs.css';
 @import './block/catalog-form.css';
+@import './block/catalog-section.css';
+
 
 
 /* Импорт TailWind */
@@ -98,8 +100,9 @@
 }
 
 .header-fix {
-    background: rgba(192, 190, 190, 0.9);
+    background: rgba(255, 255, 255, .8);
     box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+    padding-bottom: 10px;
 }
 
 .overlay {
@@ -122,4 +125,11 @@
 
 .is-visible {
     display: block;
+}
+
+
+.header-wrapper:hover .header-wrapper-modal {
+    transform: rotateX(0);
+    opacity: 1;
+    visibility: visible;
 }
