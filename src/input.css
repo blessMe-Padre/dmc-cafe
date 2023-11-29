@@ -21,6 +21,7 @@
 @import './block/catalog-form.css';
 @import './block/catalog-section.css';
 @import './block/line.css';
+@import './block/toggle.css';
 
 
 
@@ -134,4 +135,3 @@
     opacity: 1;
     visibility: visible;
 }
-
