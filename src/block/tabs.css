@@ -27,14 +27,15 @@
 }
 
 ._tabs-item:hover {
-
-    color: black;
-    box-shadow: 3px 5px 1px;
+    border-radius: 10px;
+    color: #FAA6AE;
+    border: 1px solid #FAA6AE;
+    /* box-shadow: 6px 6px 0px 0px #FAA6AE; */
 }
 
 ._tabs-item._active {
-    background-color: #6EC2A7;
-    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 6px 6px 0px 0px #6EC2A7;
     /* box-shadow: -3px -5px 0; */
 }
 
