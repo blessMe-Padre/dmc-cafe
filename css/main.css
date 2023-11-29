@@ -279,8 +279,7 @@ body.is-dark {
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper>.swiper-slide:first-child{
-  -webkit-margin-start:var(--swiper-centered-offset-before);
-          margin-inline-start:var(--swiper-centered-offset-before)
+  margin-inline-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper::before{
@@ -290,8 +289,7 @@ body.is-dark {
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper>.swiper-slide:first-child{
-  -webkit-margin-before:var(--swiper-centered-offset-before);
-          margin-block-start:var(--swiper-centered-offset-before)
+  margin-block-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper::before{
@@ -875,13 +873,15 @@ img.test {
 }
 
 ._tabs-item:hover {
-  color: black;
-  box-shadow: 3px 5px 1px;
+  border-radius: 10px;
+  color: #FAA6AE;
+  border: 1px solid #FAA6AE;
+  /* box-shadow: 6px 6px 0px 0px #FAA6AE; */
 }
 
 ._tabs-item._active {
-  background-color: #6EC2A7;
-  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: 6px 6px 0px 0px #6EC2A7;
   /* box-shadow: -3px -5px 0; */
 }
 
@@ -1209,7 +1209,7 @@ textarea.form__input {
 }
 
 .modal-wrapper {
-  margin-top: 40px;
+  margin-top: 35px;
   position: absolute;
   top: 0;
   right: 0;
@@ -1286,9 +1286,123 @@ textarea.form__input {
   }
 }
 
+.breadcrumb {
+  padding: 20px 0;
+  z-index: 1;
+}
+
+.breadcrumb__list {
+  display: flex;
+  gap: 10px;
+}
+
+.catalog-form {
+}
+
+.catalog-form__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.catalog-form__label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  border: 2px solid var(--Black, #303030);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.catalog-form__label span {
+  color: #303030;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.catalog-form__input {
+  border-radius: 10px;
+}
+
+.catalog-form__input:checked+.catalog-form__label {
+  border-radius: 10px;
+  box-shadow: 6px 6px 0px 0px #6EC2A7;
+}
+
+.catalog-items-section {
+  background-color: #FFF4F5;
+  padding: 50px 0;
+  height: 700px;
+}
+
+.catalog-items-section__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.catalog-items-section .swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.catalog-items-section .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: calc((100% - 30px) / 2) !important;
+}
+
+.catalog-items-section .swiper-button-disabled {
+  opacity: 0.6;
+}
+
+@media(max-width: 460px) {
+  .catalog-items-section {
+    height: 700px;
+  }
+}
+
+.line::after {
+  background-color: #369C7C;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  height: 10px;
+  background-color: #6EC2A7;
+  z-index: -1;
+}
+
+@media (max-width: 1280px) {
+  .line::after {
+    height: 8px;
+    bottom: 8px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .line::after {
+    height: 6px;
+    bottom: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .line::after {
+    height: 4px;
+    bottom: 6px;
+  }
+}
+
 /* Импорт TailWind */
 
-/* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -1954,6 +2068,10 @@ body {
   margin-right: 0.75rem;
 }
 
+.-ml-20{
+  margin-left: -5rem;
+}
+
 .mb-0{
   margin-bottom: 0px;
 }
@@ -1984,6 +2102,10 @@ body {
 
 .mr-4{
   margin-right: 1rem;
+}
+
+.mr-6{
+  margin-right: 1.5rem;
 }
 
 .mt-28{
@@ -2123,8 +2245,16 @@ body {
   justify-content: space-between;
 }
 
+.justify-evenly{
+  justify-content: space-evenly;
+}
+
 .gap-10{
   gap: 2.5rem;
+}
+
+.gap-12{
+  gap: 3rem;
 }
 
 .gap-2{
@@ -2145,10 +2275,6 @@ body {
 
 .overflow-hidden{
   overflow: hidden;
-}
-
-.overflow-y-auto{
-  overflow-y: auto;
 }
 
 .rounded{
@@ -2599,6 +2725,22 @@ body {
     margin-bottom: 3.5rem;
   }
 
+  .md\:mb-5{
+    margin-bottom: 1.25rem;
+  }
+
+  .md\:ml-0{
+    margin-left: 0px;
+  }
+
+  .md\:mr-0{
+    margin-right: 0px;
+  }
+
+  .md\:mt-0{
+    margin-top: 0px;
+  }
+
   .md\:block{
     display: block;
   }
@@ -2643,12 +2785,24 @@ body {
     flex-direction: column;
   }
 
+  .md\:flex-nowrap{
+    flex-wrap: nowrap;
+  }
+
   .md\:items-start{
     align-items: flex-start;
   }
 
   .md\:justify-start{
     justify-content: flex-start;
+  }
+
+  .md\:justify-between{
+    justify-content: space-between;
+  }
+
+  .md\:gap-0{
+    gap: 0px;
   }
 
   .md\:gap-5{
@@ -2742,10 +2896,6 @@ body {
     padding-right: 10rem;
   }
 
-  .lg\:pt-10{
-    padding-top: 2.5rem;
-  }
-
   .lg\:pt-20{
     padding-top: 5rem;
   }
@@ -2764,13 +2914,9 @@ body {
     line-height: 1;
   }
 
-  .lg\:text-lg{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
   .lg\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
+
