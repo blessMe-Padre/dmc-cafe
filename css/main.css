@@ -1097,19 +1097,18 @@ textarea.form__input {
   position: relative;
   box-sizing: border-box;
   min-height: 430px;
+  min-width: 320px;
   max-width: 1024px;
   padding: 20px;
   background-color: white;
   color: black;
   border-radius: 25px;
-  text-align: center;
 }
 
 .popup__title {
-  font-size: 33px;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 44px;
+  font-weight: 600;
   margin-bottom: 30px;
 }
 
@@ -1121,16 +1120,20 @@ textarea.form__input {
 
 .popup__btn {
   position: absolute;
-  width: 64px;
-  height: 64px;
+  width: 40px;
+  height: 40px;
   top: 10px;
   right: 10px;
   cursor: pointer;
   border: none;
-  padding: 10px;
-  border-radius: 50%;
+  padding: 5px;
   transition: background-color 0.3s ease;
   background-color: transparent;
+  border-radius: 100%;
+  background-color: #FAA6AE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .popup__btn:hover {
@@ -1392,8 +1395,43 @@ textarea.form__input {
 
 .catalog-form__wrapper {
   display: grid;
+  grid-template-columns: 387px 1fr;
+  gap: 30px;
+}
+
+.catalog-form__inner {
+  display: grid;
   gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+}
+
+.filter-button {
+  border-radius: 10px;
+  background: #FAA6AE;
+  box-shadow: 0px 4px 0px 0px #303030;
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  gap: 10px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .catalog-form__wrapper {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .catalog-form__inner {
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .catalog-form__list {
+    gap: 10px;
+  }
 }
 
 .catalog-items-section {
@@ -2246,6 +2284,7 @@ body {
   margin-top: auto;
 }
 
+
 .ml-44{
   margin-left: 11rem;
 }
@@ -2267,9 +2306,7 @@ body {
 }
 
 .mr-20{
-  margin-right: 5rem;
-}
-
+  margin-right: 5rem;}
 .block{
   display: block;
 }
@@ -2365,10 +2402,6 @@ body {
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-\[338px_1fr\]{
-  grid-template-columns: 338px 1fr;
 }
 
 .flex-row{

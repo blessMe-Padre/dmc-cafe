@@ -1,13 +1,4 @@
 export const initPopup = () => {
-        document.getElementById("openPopup").addEventListener("click", function() {
-        document.getElementById("popup").style.display = "block";
-      });
-      
-      // Закрыть всплывающее окно при нажатии на кнопку закрытия
-      document.getElementById("closePopup").addEventListener("click", function() {
-        document.getElementById("popup").style.display = "none";
-      });
-
     // popup =========================================================================================
 
     const body = document.querySelector('body');
@@ -66,7 +57,8 @@ export const initPopup = () => {
     }
 
     function bodyLock() {
-        const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
+        const lockPaddingValue = window.innerWidth - document.querySelector('body').offsetWidth + 'px';
+        console.log(lockPaddingValue);
 
         if (lockPadding.length > 0) {
             for (let index = 0; index < lockPadding.length; index++) {
