@@ -9,6 +9,9 @@ import { initGeneralSlider2, initGeneralSlider3, initGeneralSlider4, initGeneral
 import { initGeneralSlider1 } from "./module/general-slider.js";
 import { initNavModal } from './module/nav-modal.js'
 import { initAccordionMenu } from "./module/accordion-menu.js";
+import { initEventItemSlider } from "./module/event-item-slider.js";
+
+
 
 
 
@@ -20,7 +23,6 @@ window.addEventListener('DOMContentLoaded', () => {
     initNewSlider();
     initMainSlider();
     initStickyHeader();
-    initEventSlider();
     initTabs();
     initLoadMore();
     initLoadMore2();
@@ -33,4 +35,9 @@ window.addEventListener('DOMContentLoaded', () => {
     initGeneralSlider6();
     initNavModal();
     initAccordionMenu();
+    initEventSlider();
+    initEventItemSlider();
+    
+
+
 });
