@@ -279,7 +279,8 @@ body.is-dark {
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper>.swiper-slide:first-child{
-  margin-inline-start:var(--swiper-centered-offset-before)
+  -webkit-margin-start:var(--swiper-centered-offset-before);
+          margin-inline-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper::before{
@@ -289,7 +290,8 @@ body.is-dark {
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper>.swiper-slide:first-child{
-  margin-block-start:var(--swiper-centered-offset-before)
+  -webkit-margin-before:var(--swiper-centered-offset-before);
+          margin-block-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper::before{
@@ -1334,6 +1336,68 @@ textarea.form__input {
   box-shadow: 6px 6px 0px 0px #6EC2A7;
 }
 
+/* sidebar */
+
+.menu>li {
+  padding: 20px;
+  border-radius: 10px;
+  background: #6EC2A7;
+  box-shadow: 0px 6px 0px 0px #303030;
+  color: #ffffff;
+}
+
+.menu>li>a {
+  display: block;
+  position: relative;
+  font-weight: 600;
+}
+
+.menu>li>a::before {
+  content: '';
+  position: absolute;
+  height: 6px;
+  width: 18px;
+  top: 8px;
+  right: 10px;
+  background-image: url('../src/img/catalog-menu-arrow-up.svg');
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  transition: all 0.3s ease;
+}
+
+.menu>li>a.is-active::before {
+  transform: rotate(0deg);
+}
+
+.menu>li {
+  z-index: 10;
+  background-color: #6EC2A7;
+  margin-bottom: 20px;
+}
+
+.sub-menu {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  will-change: max-height;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.sub-menu.is-active {
+  opacity: 1;
+}
+
+.sub-menu li {
+  padding: 5px 0;
+}
+
+.catalog-form__wrapper {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+}
+
 .catalog-items-section {
   background-color: #FFF4F5;
   padding: 50px 0;
@@ -1404,9 +1468,49 @@ textarea.form__input {
   }
 }
 
+.toggle {
+  margin-top: 6px;
+  display: inline-block;
+  position: relative;
+  width: 41px;
+  height: 14px;
+}
+
+.toggle__switch input:checked+span::before {
+  background-color: #FAA6AE;
+  transform: translateX(100%);
+}
+
+.toggle__slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #E6E6E6;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.toggle__switch input:checked+.toggle__slider {
+  background-color: #000000;
+}
+
+.toggle__slider::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
 /* Импорт TailWind */
 
-/* ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -2120,6 +2224,10 @@ body {
   margin-bottom: 1.25rem;
 }
 
+.mb-7{
+  margin-bottom: 1.75rem;
+}
+
 .ml-10{
   margin-left: 2.5rem;
 }
@@ -2247,6 +2355,10 @@ body {
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-\[338px_1fr\]{
+  grid-template-columns: 338px 1fr;
 }
 
 .flex-row{
@@ -3064,5 +3176,4 @@ body {
     line-height: 1.75rem;
   }
 }
-
 

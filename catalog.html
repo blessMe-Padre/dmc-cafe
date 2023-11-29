@@ -35,11 +35,18 @@
                     </li>
                 </ul>
             </div>
+
             <h1
                 class="text-xl lg:text-6xl text-jost font-extrabold uppercase line pt-10 pb-10 z-0">
                 Каталог</h1>
 
-            <form class="catalog-form">
+
+            <div class="flex mb-5">
+                <h1 class="text-xl lg:text-6xl text-jost font-extrabold line uppercase relative z-10">
+                    Каталог</h1>
+            </div>
+
+            <form class="catalog-form mb-7">
                 <ul class="catalog-form__list">
                     <li>
                         <input class="catalog-form__input visually-hidden" type="checkbox" name="checkbox"
@@ -114,17 +121,174 @@
                         </label>
                     </li>
                 </ul>
+            </form>
 
-                <div class="catalog-form__wrapper">
-                    <div class="catalog-form__sidebar">
 
-                    </div>
-                    <div class="catalog-form__content">
+            <div class="catalog-form__wrapper grid grid-cols-[338px_1fr] gap-5">
+                <!-- sidebar -->
+                <div class="catalog-form__sidebar">
+                    <nav class="catalog-menu">
+                        <ul class="menu">
+                            <li>
+                                <a href="#">Группы</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">BTS</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">STRAY KIDS</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">ENHYPEN</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">TXT</a>
+                                    </li>
+                                </ul>
+                            </li>
 
-                    </div>
+                            <li class="">
+                                <a href="#">Азиатские вкусняшки</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">BTS</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">STRAY KIDS</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">ENHYPEN</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">TXT</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
 
-            </form>
+
+                <div class="catalog-form__content">
+
+                    <div class="catalog-form__header flex gap-5 mb-10">
+                        <div class="">
+                            <span class="text-main-black text-sm">Предзаказ</span>
+                            <div class="toggle">
+                                <label class="toggle__switch">
+                                    <input class="visually-hidden" type="checkbox" name="storehouse">
+                                    <span class="toggle__slider"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="text-main-black text-sm">В наличии РФ</span>
+                            <div class="toggle">
+                                <label class="toggle__switch">
+                                    <input class="visually-hidden" type="checkbox" name="storehouse">
+                                    <span class="toggle__slider"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <ul class="catalog-form__wrapper">
+                        <li class="rounded-xl relative">
+                            <a href="#">
+                                <div class="new-items-section__img">
+                                    <img class="rounded-xl" src="./src/img/new/new_4.png" />
+                                </div>
+
+                                <div class="absolute left-3 top-3 text-gray-500 w-40">
+                                    <img class="absolute top-0 left-0 md:w-40 w-28" src="./src/img/order/sticker.png"
+                                        height="40" width="160" />
+                                </div>
+                                <p class="font-medium text-xs sm:text-base md:text-xl pt-2 pb-2">Альбом Stray Kids The
+                                    3rd
+                                    Album 5-STAR
+                                </p>
+                                <div class="flex flex-col md:flex-row items-start md:items-start">
+                                    <div class="flex items-center justify-center md:justify-start gap-5">
+                                        <p class="mr-2 font-bold text-sm md:text-2xl md:mb-0">2000 р</p>
+                                        <a href="#" class="absolute md:top-3 md:right-3 text-gray-500 ml-10">
+                                            <img class="bg-pink rounded-lg shadow-md shadow-main-black"
+                                                src="./src/img/icons/favorite.svg" />
+                                        </a>
+                                        <a class="mx-1 ml-10" href="#">
+                                            <img src="./src/img/icons/cart.svg"
+                                                class="bg-green rounded-lg shadow-md shadow-main-black" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="rounded-xl relative">
+                            <a href="#">
+                                <div class="new-items-section__img">
+                                    <img class="rounded-xl" src="./src/img/new/new_4.png" />
+                                </div>
+
+                                <div class="absolute left-3 top-3 text-gray-500 w-40">
+                                    <img class="absolute top-0 left-0 md:w-40 w-28" src="./src/img/order/sticker.png"
+                                        height="40" width="160" />
+                                </div>
+                                <p class="font-medium text-xs sm:text-base md:text-xl pt-2 pb-2">Альбом Stray Kids The
+                                    3rd
+                                    Album 5-STAR
+                                </p>
+                                <div class="flex flex-col md:flex-row items-start md:items-start">
+                                    <div class="flex items-center justify-center md:justify-start gap-5">
+                                        <p class="mr-2 font-bold text-sm md:text-2xl md:mb-0">2000 р</p>
+                                        <a href="#" class="absolute md:top-3 md:right-3 text-gray-500 ml-10">
+                                            <img class="bg-pink rounded-lg shadow-md shadow-main-black"
+                                                src="./src/img/icons/favorite.svg" />
+                                        </a>
+                                        <a class="mx-1 ml-10" href="#">
+                                            <img src="./src/img/icons/cart.svg"
+                                                class="bg-green rounded-lg shadow-md shadow-main-black" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="rounded-xl relative">
+                            <a href="#">
+                                <div class="new-items-section__img">
+                                    <img class="rounded-xl" src="./src/img/new/new_4.png" />
+                                </div>
+
+                                <div class="absolute left-3 top-3 text-gray-500 w-40">
+                                    <img class="absolute top-0 left-0 md:w-40 w-28" src="./src/img/order/sticker.png"
+                                        height="40" width="160" />
+                                </div>
+                                <p class="font-medium text-xs sm:text-base md:text-xl pt-2 pb-2">Альбом Stray Kids The
+                                    3rd
+                                    Album 5-STAR
+                                </p>
+                                <div class="flex flex-col md:flex-row items-start md:items-start">
+                                    <div class="flex items-center justify-center md:justify-start gap-5">
+                                        <p class="mr-2 font-bold text-sm md:text-2xl md:mb-0">2000 р</p>
+                                        <a href="#" class="absolute md:top-3 md:right-3 text-gray-500 ml-10">
+                                            <img class="bg-pink rounded-lg shadow-md shadow-main-black"
+                                                src="./src/img/icons/favorite.svg" />
+                                        </a>
+                                        <a class="mx-1 ml-10" href="#">
+                                            <img src="./src/img/icons/cart.svg"
+                                                class="bg-green rounded-lg shadow-md shadow-main-black" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
 
         </div>
     </main>
