@@ -10,6 +10,7 @@ import { initGeneralSlider1 } from "./module/general-slider.js";
 import { initNavModal } from './module/nav-modal.js'
 import { initAccordionMenu } from "./module/accordion-menu.js";
 import { initEventItemSlider } from "./module/event-item-slider.js";
+import { initPopup } from "./module/popup.js";
 
 
 
@@ -37,7 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initAccordionMenu();
     initEventSlider();
     initEventItemSlider();
-    
+    initPopup();
 
 
 });
