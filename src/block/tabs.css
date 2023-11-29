@@ -36,7 +36,7 @@
 ._tabs-item._active {
     border-radius: 10px;
     box-shadow: 6px 6px 0px 0px #6EC2A7;
-    /* box-shadow: -3px -5px 0; */
+    background-image: url('.src/img/Star 4.png');
 }
 
 ._tabs-block {
