@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMC Каталог</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="z-10 w-full transition-colors top-0 fixed pt-2 md:pt-0">
+        <div class="container md:gap-5 items-center justify-between flex md:pt-2">
+
+            <div class="flex items-center justify-center">
+               <button class="btn-close-menu bg-pink rounded-xl shadow-md shadow-main-black">
+                    <svg viewBox="0 0 64 48">
+                        <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                        <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                        <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                    </svg>
+                </button>
+                <div class="mobile-menu bg-orange pt-10 -left-96">
+                    <div class="hidden lg:block">
+                        <ul class="flex flex-col pb-11 text-main-black mt-28 overflow-auto h-screen scrollbar-thumb-gray-300 scrollbar-track-gray-100 justify-start items-start">
+                            <li class="px-4 mb-4">
+                                <a class="text-main-black hover:text-green transition-colors nav-link"
+                                    href="#">
+                                    <div class="flex items-center justify-center gap-10">
+                                        <img class="rounded-xl" src="./src/img/bands/attez.png" alt="bts_img"/>
+                                        <p class="text-xl font-semibold">attez</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="px-4 mb-4">
+                                <a class="text-main-black hover:text-green transition-colors nav-link"
+                                    href="#">
+                                    <div class="flex items-center justify-center gap-10">
+                                        <img class="rounded-xl" src="./src/img/bands/blackpink.png" alt="bts_img"/>
+                                        <p class="text-xl font-semibold">blackpink</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="px-4 mb-4">
+                                <a class="text-main-black hover:text-green transition-colors nav-link"
+                                    href="#">
+                                    <div class="flex items-center justify-center gap-10">
+                                        <img class="rounded-xl" src="./src/img/bands/bts.png" alt="bts_img"/>
+                                        <p class="text-xl font-semibold">BTS</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="px-4 mb-4">
+                                <a class="text-main-black hover:text-green transition-colors nav-link"
+                                    href="#">
+                                    <div class="flex items-center justify-center gap-10">
+                                        <img class="rounded-xl" src="./src/img/bands/enhypen.png" alt="bts_img"/>
+                                        <p class="text-xl font-semibold">enhypen</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="px-4 mb-4">
+                                <a class="text-main-black hover:text-green transition-colors nav-link"
+                                    href="#">
+                                    <div class="flex items-center justify-center gap-10">
+                                        <img class="rounded-xl" src="./src/img/bands/itzy.png" alt="bts_img"/>
+                                        <p class="text-xl font-semibold">itzy</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="px-4 mb-4">
+                                <a class="text-main-black hover:text-green transition-colors nav-link"
+                                    href="#">
+                                    <div class="flex items-center justify-center gap-10">
+                                        <img class="rounded-xl" src="./src/img/bands/nmixx.png" alt="bts_img"/>
+                                        <p class="text-xl font-semibold">nmixx</p>
+                                    </div>
+                                </a>
+                            </li>
+                                <li class="px-4 mb-4"">
+                                    <a class="text-main-black hover:text-green transition-colors nav-link"
+                                        href="#">
+                                        <div class="flex items-center justify-center gap-10">
+                                            <img class="rounded-xl" src="./src/img/bands/twice.png" alt="bts_img"/>
+                                            <p class="text-xl font-semibold">twice</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="px-4 mb-4"">
+                                    <a class="text-main-black hover:text-green transition-colors nav-link"
+                                        href="#">
+                                        <div class="flex items-center justify-center gap-10">
+                                            <img class="rounded-xl" src="./src/img/bands/txt.png" alt="bts_img"/>
+                                            <p class="text-xl font-semibold">txt</p>
+                                        </div>
+                                    </a>
+                                </li>
+                        </ul>
+                    </div>
+                    <div class="lg:hidden sm:block overflow-hidden w-full">
+                        <ul class="flex flex-col pb-11 text-main-black mt-28">
+                            <li class="px-4 mb-4"><a class="text-main-black hover:text-green transition-colors nav-link"
+                                    href="#" data-goto="#">Группы</a>
+                            </li>
+                            <li class="px-4 mb-4"><a class="text-main-black hover:text-green transition-colors nav-link"
+                                    href="#" data-goto=".page-section-1">Каталог</a>
+                            </li>
+                            <li class="px-4 mb-4"><a class="text-main-black hover:text-green transition-colors nav-link"
+                                    href="#" data-goto=".page-section-2">Новинки</a></li>
+                            <li class="px-4 mb-4"><a class="text-main-black hover:text-green transition-colors nav-link"
+                                    href="#" data-goto=".page-section-3">Предзаказ</a></li>
+    
+                            <li class="px-4 mb-4"><a class="text-main-black hover:text-green transition-colors nav-link"
+                                    href="#" data-goto=".page-section-4">Мероприятия</a></li>
+    
+                            <li class="px-4 mb-4"><a class="text-main-black hover:text-green transition-colors nav-link"
+                                    href="#" data-goto="#">Отзывы</a></li>
+                        </ul>
+
+                    </div>
+                    
+                </div>
+
+                
+                <span class="sm:w-[142px] sm:h-[70px] w-[74px] h-[37px]"><img src="./src/img/logo.svg" /></span>
+                <span class="text-[12px] md:text-[20px] text-main-black">DMS <span class="text-pink">SHOP</span> </br> AND  <span class="text-green">CAFE</span></span>
+            </div>
+            
+            <ul class="mobile gap-2 flex-wrap text-main-black hidden md:flex">
+                <li class="mr-4"><a class="text-main-black hover:text-green transition-colors nav-link" href="#"
+                        data-goto=".page-section-1">Каталог</a></li>
+                <li class="mr-4"><a class="text-main-black hover:text-green transition-colors nav-link" href="#"
+                        data-goto=".page-section-2">Новинки</a></li>
+                <li class="mr-4"><a class="text-main-black hover:text-green transition-colors nav-link" href="#"
+                        data-goto=".page-section-3">Предзаказ</a></li>
+                <li class="mr-4"><a class="text-main-black hover:text-green transition-colors nav-link" href="#"
+                        data-goto=".page-section-4">Мероприятия</a></li>
+                <li class="mr-4"><a class="text-main-black hover:text-green transition-colors nav-link" href="#"
+                        data-goto=".page-section-5">Отзывы</a></li>
+            </ul>
+            <div class="justify-center items-center relative">
+                    <ul class="flex">
+                        <li class="header-wrapper">
+                            <a class="header-call-button block w-full mx-1" href="#">
+                                <img src="./src/img/icons/cart.svg" class=" hover:bg-dark-pink transition-all .5s bg-green p-1 rounded-xl shadow-md shadow-main-black"/>
+                            </a>
+                                <div class="modal-wrapper">
+                                    <div class="modal-content w-80">
+                                        <div class="flex items-center justify-center">
+                                            <img src="./src/img/icons/check-mark-circle.svg" alt="" />
+                                          <p class="text-dark-green font-bold pl-3 sm:text-xs md:text-lg">Товар добавлен в корзину</p>
+                                        </div>
+                                      <a href="#" class="text-green underline flex items-center justify-center sm:text-xs md:text-lg">Перейти</a>
+                                    </div>
+                                </div>
+                            
+                        </li>
+
+                        <li class="header-wrapper">
+                            <div class="modal-wrapper w-60">
+                                <div class="modal-content">
+                                    <ul class="p-5">
+                                        <li>
+                                            <a href="#" class="font-semibold text-main-black block">Личный кабинет</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="font-semibold text-green block pt-5">Вход</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="font-semibold  text-dark-pink block pt-5">Регистрация</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>      
+                            <a class="header-call-button account block w-full mx-1" href="#">
+                                <img src="./src/img/icons/account.svg" class=" hover:bg-dark-pink transition-all .5s bg-green p-1 rounded-xl shadow-md shadow-main-black" />
+                            </a>
+                        </li>
+                        <li class="header-wrapper">
+                            <div class="modal-wrapper lg:w-[1440px]">
+                                <div class="modal-content">
+                                    <div class="container">
+                                        <form class="flex" action="" method="get">
+                                            <div class="flex items-center justify-between w-full">
+                                                <input class="text-main-black md:text-lg text-sm bg-bg rounded-xl p-2 md:w-full" name="" placeholder="Что вы ищите?" type="search">
+                                                <button class="text-white p-2 bg-pink rounded-xl relative pr-10 pl-10" type="submit">Найти</button>
+                                            </div>
+                                        </form>
+                                        <div style="max-height: 300px; overflow-y: auto;">
+                                            <ul class="flex items-center justify-center gap-5 flex-wrap band__list2">
+                                                <li>
+                                                    <div class="flex items-center justify-center gap-5">
+                                                        <img class="rounded-lg w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
+                                                        <p class="md:text-xl text-sm text-main-black font-bold"> STRAY KIDS</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="flex items-center justify-center gap-5">
+                                                        <img class="rounded-lg w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
+                                                        <p class="md:text-xl text-sm text-main-black font-bold"> STRAY KIDS</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="flex items-center justify-center gap-5">
+                                                        <img class="rounded-lg w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
+                                                        <p class="md:text-xl text-sm text-main-black font-bold"> STRAY KIDS</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="flex items-center justify-center gap-5">
+                                                        <img class="rounded-lg w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
+                                                        <p class="md:text-xl text-sm text-main-black font-bold"> STRAY KIDS</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="flex items-center justify-center gap-5">
+                                                        <img class="rounded-lg w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
+                                                        <p class="md:text-xl text-sm text-main-black font-bold"> STRAY KIDS</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="flex items-center justify-center gap-5">
+                                                        <img class="rounded-lg w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
+                                                        <p class="md:text-xl text-sm text-main-black font-bold"> STRAY KIDS</p>
+                                                    </div>
+                                                </li>
+                                                <li class="hidden">
+                                                    <div class="flex items-center justify-center gap-5">
+                                                        <img class="rounded-lg w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
+                                                        <p class="md:text-xl text-sm text-main-black font-bold"> STRAY KIDS</p>
+                                                    </div>
+                                                </li>
+                                                <li class="hidden">
+                                                    <div class="flex items-center justify-center gap-5">
+                                                        <img class="rounded-lg w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
+                                                        <p class="md:text-xl text-sm text-main-black font-bold"> STRAY KIDS</p>
+                                                    </div>
+                                                </li>
+                                                <li class="hidden">
+                                                    <div class="flex items-center justify-center gap-5">
+                                                        <img class="rounded-lg w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
+                                                        <p class="md:text-xl text-sm text-main-black font-bold"> STRAY KIDS</p>
+                                                    </div>
+                                                </li>
+                                                <li class="hidden">
+                                                    <div class="flex items-center justify-center gap-5">
+                                                        <img class="rounded-lg w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
+                                                        <p class="md:text-xl text-sm text-main-black font-bold"> STRAY KIDS</p>
+                                                    </div>
+                                                </li>
+                                                <li class="hidden">
+                                                    <div class="flex items-center justify-center gap-5">
+                                                        <img class="rounded-lg w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
+                                                        <p class="md:text-xl text-sm text-main-black font-bold"> STRAY KIDS</p>
+                                                    </div>
+                                                </li>
+                                                <li class="hidden">
+                                                    <div class="flex items-center justify-center gap-5">
+                                                        <img class="rounded-lg w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
+                                                        <p class="md:text-xl text-sm text-main-black font-bold"> STRAY KIDS</p>
+                                                    </div>
+                                                </li>
+                                                <li class="hidden">
+                                                    <div class="flex items-center justify-center gap-5">
+                                                        <img class="rounded-lg w-[60px] h-[60px]" src="./src/img/bands_big/image 16.png" />
+                                                        <p class="md:text-xl text-sm text-main-black font-bold"> STRAY KIDS</p>
+                                                    </div>
+                                                </li>
+                                               
+                                            </ul>
+                                        </div>
+
+                                        <div class="flex items-center justify-end gap-2">
+                                            <span class="loadMoreText2">Посмотреть все 2</span>
+                                            <button class="loadMoreButton2">
+                                                <span><img src="./src/img/icons/arrow-bottom.svg" alt="стрелочка вниз"/></span>
+                                            </button>
+                                            <button class="hideMoreButton2 hidden">
+                                                <span><img class="rotate-180" src="./src/img/icons/arrow-bottom.svg" alt="стрелочка вниз"/></span>
+                                            </button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>    
+                            <a class="header-call-button account block w-full mx-1" href="#">
+                                <img src="./src/img/icons/search.svg" class=" hover:bg-dark-pink transition-all .5s bg-green p-1 rounded-xl shadow-md shadow-main-black"/>                                    <div class="modal-wrapper w-60">
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section>
+            <div class="container pt-20">
+               
+                <div class="breadcrumb">
+                    <ul class="breadcrumb__list">
+                        <li class="breadcrumb__item">
+                            <a href="index.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="opacity-60"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </li>
+
+                        <li class="breadcrumb__item">
+                            <span class="opacity-60">Каталог</span>
+                        </li>
+
+                        <li class="opacity-60"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </li>
+
+                        <li class="breadcrumb__item">
+                            <span class="opacity-100">DMC K-POP CAFE празднует День Рождение  Чонхо из Ateez</span>
+                        </li>
+                    </ul>
+                </div>
+
+
+            <section class="lg:pt-8 pt-4">
+                <div class="container grid grid-cols-1 md:grid-cols-2 ">
+                    
+                    <div class="event-item__slider w-0 min-w-[100%] overflow-hidden relative">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img class="rounded-3xl md:w-[600px] md:h-[600px]" src="./src/img/event/event-item.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="rounded-3xl md:w-[600px] md:h-[600px]" src="./src/img/event/event-item.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="rounded-3xl md:w-[600px] md:h-[600px]" src="./src/img/event/event-item.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="rounded-3xl md:w-[600px] md:h-[600px]" src="./src/img/event/event-item.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="rounded-3xl md:w-[600px] md:h-[600px]" src="./src/img/event/event-item.png" alt="">
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="flex flex-col relative bg-bg md:p-10 p-5 rounded-3xl">
+                    
+                        <div class="flex">
+                            <h2 class="text-xl lg:text-3xl text-jost font-extrabold uppercase relative z-0">DMC K-POP CAFE празднует День Рождение Чонхо из Ateez </h2>
+                        </div>
+
+                        <div class="pt-8">
+                            <p class="font-semibold md:text-2xl sm:text-base">
+                                В нашем кафе будут: 
+                            </p>
+                        </div>
+
+                        <div>
+                            <ul class="list-disc pt-5 pl-10">
+                                <li class="pt-2 md:text-lg text-base">
+                                    Именные напитки  
+                                </li>
+
+                                <li class="pt-2 md:text-lg text-base">
+                                    Вкусная еда
+                                </li>
+
+                                <li class="pt-2 md:text-lg text-base">
+                                    Тематические десерты  
+    
+                                </li>
+
+                                <li class="pt-2">
+                                    Просмотр различных медиа и прослушивание треков  
+                                </li>
+
+                                <li class="pt-2 md:text-lg text-base">
+                                    Карточка в подарок к заказу  
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <ul class="pt-7">
+                                <li class="flex pt-5 gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                        <rect width="34" height="34" rx="17" fill="#FAA6AE"/>
+                                        <path d="M16.9584 25.893C20.4376 22.3144 23.9167 19.1099 23.9167 15.1572C23.9167 11.2044 20.8014 8 16.9584 8C13.1154 8 10 11.2044 10 15.1572C10 19.1099 13.4792 22.3144 16.9584 25.893Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16.9583 16.9469C18.0564 16.9469 18.9464 16.0568 18.9464 14.9588C18.9464 13.8608 18.0564 12.9707 16.9583 12.9707C15.8603 12.9707 14.9702 13.8608 14.9702 14.9588C14.9702 16.0568 15.8603 16.9469 16.9583 16.9469Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <p class="font-semibold md:text-lg text-sm">
+                                        DMC K-POP CAFE, Владивосток, Светланская улица, 109
+                                    </p>
+                                </li>
+                                <li class="flex pt-5 gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                        <rect width="34" height="34" rx="17" fill="#FAA6AE"/>
+                                        <path d="M16.875 25.75C21.7766 25.75 25.75 21.7766 25.75 16.875C25.75 11.9735 21.7766 8 16.875 8C11.9735 8 8 11.9735 8 16.875C8 21.7766 11.9735 25.75 16.875 25.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16.875 10.959V16.8757" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M21.0561 21.0561L16.875 16.875" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    <p class="font-semibold md:text-lg text-sm">
+                                        09:00-23:00
+                                    </p>
+                                </li>
+                                <li class="flex pt-5 gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                        <rect width="34" height="34" rx="17" fill="#FAA6AE"/>
+                                        <path d="M19.6525 19.9382L20.0911 19.5022C20.6974 18.8993 21.6424 18.7755 22.4182 19.1971L24.2579 20.1973C25.4394 20.8395 25.6997 22.4135 24.7764 23.3317L23.4084 24.6918C23.0606 25.0377 22.629 25.2904 22.1327 25.3367M8.00278 12.6069C7.96885 12.0098 8.24866 11.4716 8.66622 11.0564L10.1777 9.55353C11.0198 8.7162 12.4395 8.84585 13.1742 9.82725L14.3885 11.4493C14.9821 12.2422 14.918 13.3283 14.2376 14.0049L13.9614 14.2795" stroke="white" stroke-width="1.5"/>
+                                        <path d="M22.1328 25.3372C20.5637 25.4835 16.7266 25.3219 12.6371 21.2557C8.78084 17.4213 8.08974 14.1349 8.00293 12.6074" stroke="white" stroke-width="1.5"/>
+                                        <path d="M19.6524 19.9381C19.6524 19.9381 18.6099 20.9746 15.7644 18.1453C12.9188 15.3159 13.9613 14.2793 13.9613 14.2793" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                        </svg>
+                                    <p class="font-semibold md:text-lg text-sm">
+                                        Для брони звонить: +7 (924) 257-95-87
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+                
+            </div>
+        </section>
+
+        </div>
+    </main>
+
+    <footer class="footer page-section-3 md:pt-32 pt-10 mt-auto">
+        <div class="container flex">
+            <div class="container flex md:justify-between justify-evenly md:flex-nowrap flex-wrap">
+                <div class="mb-0 md:block flex justify-center md:flex-nowrap flex-wrap">
+                    <div class="flex items-start justify-start md:ml-0 -ml-20">
+                        <div class="flex">
+                            <a href="#"><img loading="lazy" src="./src/img/logo.svg" width="137" height="42" alt="лого"></a>
+                            <h2 class="md:text-2xl sm:text-base font-extrabold text-main-black p-2">
+                                DMC <span class="text-pink">SHOP</span><br> AND <span class="text-green">CAFE</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="text-main-black mt-5 transition hover:text-green mb-10 md:mr-0 mr-6 flex flex-wrap">
+                      <p class="md:text-lg text-sm">
+                          ИП Тарасова мария Викторовна <br>
+                          г. Владивосток, ул.Светланская, д.109  
+                      </p>
+                    </div>
+                  </div>
+                
+                <ul class="grid grid-cols-2 mb-4 md:mt-0 mt-5">
+                    <li><a class="text-sm md:text-lg text-main-black mb-2 block transition hover:text-green" href="">Каталог</a></li>
+                    <li><a class="text-sm md:text-lg text-main-black mb-2 block transition hover:text-green" href="">Отзывы</a></li>
+                    <li><a class="text-sm md:text-lg text-main-black mb-2 block transition hover:text-green" href="">Мероприятия</a></li>
+                    <li><a class="text-sm md:text-lg text-main-black mb-2 block transition hover:text-green" href="">Доставка и оплата</a></li>
+                    <li><a class="text-sm md:text-lg text-main-black mb-2 block transition hover:text-green" href="">Новинки</a></li>
+                    <li><a class="text-sm md:text-lg text-main-black mb-2 block transition hover:text-green" href="">Предзаказ</a></li>
+                    <li><a class="text-sm md:text-lg text-main-black mb-2 block transition hover:text-green" href="">Пользовательское соглашение</a></li>
+
+                    <li><a class="text-sm md:text-lg text-main-black mb-2 block transition hover:text-green" href="">Политика конфиденциальности</a></li>
+                </ul>
+
+                <div class="flex flex-row md:flex-col justify-between md:gap-0 gap-12">
+                    <a class="header-call-button block w-full mx-3" href="#">
+                        <img src="./src/img/socials/Vector.svg" class="bg-pink p-2 rounded-lg shadow-md shadow-main-black mb-4" />
+                    </a>
+                    <ul>
+                        <li><a class="text-sm text-main-black mb-5 block transition hover:text-green font-semibold"
+                                href="tel:+78005553535">
+                                +7 (999) 999-99-99</a></li>
+                        <li><a class="text-sm text-main-black mb-5 block transition hover:text-green font-semibold"
+                                href="tel:+78005553535">
+                                +7 (999) 999-99-99</a></li>
+                        <li><a class="text-sm text-main-black mb-5 block transition hover:text-green font-semibold"
+                                href="mailto:info@urgent-cleaner.com">dmc_shop@mail.ru</a></li>
+                        <li>
+                            <a href="https://yandex.ru/maps/org/dms_k_pop/20433094477/?ll=131.908135%2C43.115424&z=14.66">
+                                <p class="text-sm text-green mb-4 decoration-green"><a href="#">Посмотреть на карте</a></p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>
