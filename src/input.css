@@ -22,7 +22,7 @@
 @import './block/catalog-section.css';
 @import './block/line.css';
 @import './block/toggle.css';
-
+@import './block/reviews.css';
 
 
 /* Импорт TailWind */
@@ -118,17 +118,13 @@
 
 }
 
-
 .text-jost {
     font-family: 'Jost';
 }
 
-
-
 .is-visible {
     display: block;
 }
-
 
 .header-wrapper:hover .header-wrapper-modal {
     transform: rotateX(0);
@@ -136,3 +132,8 @@
     visibility: visible;
 }
 
+.page-wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+}
