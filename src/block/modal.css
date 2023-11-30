@@ -5,7 +5,8 @@
     right: 0;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 10px 4px 6px #369C7C;
+    /* border: 1px solid black; */
+    /* box-shadow: 10px 4px 6px #369C7C; */
     transition: opacity 0.3s ease;
     visibility: hidden;
     opacity: 0;

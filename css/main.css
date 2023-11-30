@@ -1222,7 +1222,8 @@ textarea.form__input {
   right: 0;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 10px 4px 6px #369C7C;
+  /* border: 1px solid black; */
+  /* box-shadow: 10px 4px 6px #369C7C; */
   transition: opacity 0.3s ease;
   visibility: hidden;
   opacity: 0;
@@ -2330,6 +2331,10 @@ body {
   margin-top: 8rem;
 }
 
+.mt-40{
+  margin-top: 10rem;
+}
+
 .mt-5{
   margin-top: 1.25rem;
 }
@@ -2620,6 +2625,10 @@ body {
   padding-bottom: 9rem;
 }
 
+.pb-5{
+  padding-bottom: 1.25rem;
+}
+
 .pl-10{
   padding-left: 2.5rem;
 }
@@ -2682,6 +2691,11 @@ body {
 
 .font-Jost{
   font-family: Jost-bold, bold;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl{
@@ -2784,6 +2798,10 @@ body {
   opacity: 1;
 }
 
+.opacity-50{
+  opacity: 0.5;
+}
+
 .opacity-60{
   opacity: 0.6;
 }
@@ -2797,6 +2815,10 @@ body {
 .shadow-main-black{
   --tw-shadow-color: #303030;
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition{
@@ -3125,6 +3147,14 @@ body {
     padding-bottom: 11rem;
   }
 
+  .md\:pl-10{
+    padding-left: 2.5rem;
+  }
+
+  .md\:pr-10{
+    padding-right: 2.5rem;
+  }
+
   .md\:pr-6{
     padding-right: 1.5rem;
   }
@@ -3150,6 +3180,11 @@ body {
     line-height: 2rem;
   }
 
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .md\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
@@ -3157,6 +3192,11 @@ body {
 
   .md\:text-\[20px\]{
     font-size: 20px;
+  }
+
+  .md\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .md\:text-lg{
