@@ -25,13 +25,24 @@
 }
 
 .new-items-section .swiper-button-disabled {
-  opacity: 0.6;
+    opacity: 0.6;
 }
 
 
 @media(max-width: 460px) {
     .new-items-section {
         height: 700px;
+    }
+
+    .new-items-section__img img {
+        height: 150px;
+    }
+}
+
+@media (max-width:767px) {
+
+    .new-items-section__img img {
+        height: 330px;
     }
 }
 
