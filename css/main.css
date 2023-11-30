@@ -1504,6 +1504,56 @@ textarea.form__input {
   }
 }
 
+.pink-line::after {
+  content: '';
+  position: absolute;
+  gap:20px;
+  /* bottom: 10px; */
+  width: 70%;
+  height: 5px;
+  background-color: #FAA6AE;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .pink-line::after {
+    height: 3px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .pink-line::after {
+    height: 3px;
+    width: 60%;
+  }
+}
+
+.green-line::after {
+  content: '';
+  position: absolute;
+  gap:20px;
+  /* bottom: 10px; */
+  width: 70%;
+  height: 5px;
+  background-color: #6EC2A7;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .green-line::after {
+    height: 3px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .green-line::after {
+    height: 3px;
+    width: 60%;
+  }
+}
+
 .toggle {
   margin-top: 6px;
   display: inline-block;
@@ -2138,6 +2188,10 @@ body {
   position: relative;
 }
 
+.-bottom-0{
+  bottom: -0px;
+}
+
 .-left-96{
   left: -24rem;
 }
@@ -2236,10 +2290,6 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.mb-32{
-  margin-bottom: 8rem;
-}
-
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -2254,6 +2304,10 @@ body {
 
 .ml-10{
   margin-left: 2.5rem;
+}
+
+.mr-10{
+  margin-right: 2.5rem;
 }
 
 .mr-2{
@@ -2284,29 +2338,6 @@ body {
   margin-top: auto;
 }
 
-
-.ml-44{
-  margin-left: 11rem;
-}
-
-.mr-10{
-  margin-right: 2.5rem;
-}
-
-.mr-16{
-  margin-right: 4rem;
-}
-
-.mr-40{
-  margin-right: 10rem;
-}
-
-.mr-36{
-  margin-right: 9rem;
-}
-
-.mr-20{
-  margin-right: 5rem;}
 .block{
   display: block;
 }
@@ -2335,12 +2366,12 @@ body {
   height: 60px;
 }
 
-.h-screen{
-  height: 100vh;
-}
-
 .h-auto{
   height: auto;
+}
+
+.h-screen{
+  height: 100vh;
 }
 
 .w-0{
@@ -2438,10 +2469,6 @@ body {
 
 .justify-between{
   justify-content: space-between;
-}
-
-.justify-around{
-  justify-content: space-around;
 }
 
 .justify-evenly{
@@ -2552,11 +2579,6 @@ body {
   padding: 1.75rem;
 }
 
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .px-16{
   padding-left: 4rem;
   padding-right: 4rem;
@@ -2592,6 +2614,10 @@ body {
 
 .pb-2{
   padding-bottom: 0.5rem;
+}
+
+.pb-36{
+  padding-bottom: 9rem;
 }
 
 .pl-10{
@@ -3071,10 +3097,6 @@ body {
     justify-content: flex-end;
   }
 
-  .md\:justify-center{
-    justify-content: center;
-  }
-
   .md\:justify-between{
     justify-content: space-between;
   }
@@ -3097,6 +3119,10 @@ body {
 
   .md\:p-10{
     padding: 2.5rem;
+  }
+
+  .md\:pb-44{
+    padding-bottom: 11rem;
   }
 
   .md\:pr-6{
