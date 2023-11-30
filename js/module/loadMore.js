@@ -21,7 +21,7 @@ export const initLoadMore = () => {
 
       if (currentIndex >= hiddenItems.length) {
         loadMoreButton.style.display = "none";
-        loadMoreText.textContent = "Больше нет";
+        loadMoreText.textContent = "Свернуть";
         hideMoreButton.classList.remove('hidden');
       }
     });
@@ -69,7 +69,7 @@ export const initLoadMore2 = () => {
 
       if (currentIndex >= hiddenItems2.length) {
         loadMoreButton2.style.display = "none";
-        loadMoreText2.textContent = "Больше нет";
+        loadMoreText2.textContent = "Свернуть";
         hideMoreButton2.classList.remove('hidden');
       }
     });
@@ -89,7 +89,7 @@ export const initLoadMore2 = () => {
         hideMoreButton2.classList.add('hide');
       }
       loadMoreButton2.style.display = "block";
-      loadMoreText2.textContent = "Посмотреть еще 2";
+      loadMoreText2.textContent = "Посмотреть еще";
     });
   }
 };
